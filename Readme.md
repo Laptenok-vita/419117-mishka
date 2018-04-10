@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Лаптенок](https://up.htmlacademy.ru/adaptive/14/user/419117).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://up.htmlacademy.ru/adaptive/14/user/29002).
 
 ---
 
