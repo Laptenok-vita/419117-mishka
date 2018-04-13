@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo-link" href="index.html">
+      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип">
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="card.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <button class="main-nav__close" type="button">
+        Закрыть меню
+      </button>
+    </nav>
+
+    <button class="main-nav__open" type="button">
+      Открыть меню
+    </button>
+
+    <main class="page-main">
+
+      <h1 class="page-main__title">Каталог товаров</h1>
+
+      <section class="catalog">
+
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="catalog/bunny.html">
+              <img class="catalog__photo" src="" width="" height="" alt="Зайчик-попрыгайчик">
+              <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="catalog__description">Рост 30 см, вес 200 г</p>
+            <span class="catalog__price">1 200 руб.</span>
+            <button class="catalog__add-card" type="button">Добавить в корзину</button>
+          </li>
+
+          <li class="catalog__item">
+            <a class="catalog__link" href="catalog/laundry-basket.html">
+              <img class="catalog__photo" src="" width="" height="" alt="Корзинка для белья">
+              <h3 class="catalog__title">Корзинка для белья</h3>
+            </a>
+            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+            <span class="catalog__price">690 руб.</span>
+            <button class="catalog__add-card" type="button">Добавить в корзину</button>
+          </li>
+
+          <li class="catalog__item">
+            <a class="catalog__link" href="catalog/big-basket-toy.html">
+              <img class="catalog__photo" src="" width="" height="" alt="Большая корзинка для игрушек">
+              <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+            <span class="catalog__price">1 500 руб.</span>
+            <button class="catalog__add-card" type="button">Добавить в корзину</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <!-- poster="" задаёт адрес картинки-обложки, которая отображается, когда видео еще не загрузилось или не воспроизводится -->
+        <video class="production__video" src="" width="" height="" poster=""></video>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="production__link button" href="#">Сделать заказ</a>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagramm" href="#">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <ul class="modal__list">
+          <li class="modal__item">S</li>
+          <li class="modal__item">M</li>
+          <li class="modal__item">L</li>
+      </ul>
+      <a class="modal__add-card button" href="card.html">Добавить</a>
+    </section>
+
+</body>
+
+</html>
