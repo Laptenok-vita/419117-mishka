@@ -37,7 +37,8 @@
       </button>
 
     </nav>
-
+  </header>
+  
     <main class="page-main">
 
       <h1 class="page-main__title">Каталог товаров</h1>
@@ -110,25 +111,25 @@
     </footer>
 
     <section class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
+      <h2 class="modal__title">Добавить в корзину</h2>
 
-        <form class="modal__form" action="http://echo.htmlacademy.ru" method="post">
+      <form class="modal__form" action="http://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="form-size">
-            <legend class="form-size__title">Выберите размер:</legend>
-            <label class="form-size__label" for="size-s">S</label>
-            <input class="form-size__input" type="radio" id="size-s" name="size">
+      <fieldset class="modal__input form-radio">
+          <legend class="form-radio__title">Выберите размер:</legend>
+          <label class="form-radio__label" for="size-s">S</label>
+          <input class="form-radio__input" type="radio" id="size-s" name="size">
 
-            <label class="form-size__label" for="size-m">M</label>
-            <input class="form-size__input" type="radio" id="size-m" name="size">
+          <label class="form-radio__label" for="size-m">M</label>
+          <input class="form-radio__input" type="radio" id="size-m" name="size">
 
-            <label class="form-size__label" for="size-l">L</label>
-            <input class="form-size__input" type="radio" id="size-l" name="size">
+          <label class="form-radio__label" for="size-l">L</label>
+          <input class="form-radio__input" type="radio" id="size-l" name="size">
 
-        </fieldset>
-        <a class="modal__add-card button" href="#">Добавить</a>
-        </form>
-    </section>
+      </fieldset>
+      <a class="modal__addition button" href="#">Добавить</a>
+      </form>
+  </section>
 
 </body>
 
