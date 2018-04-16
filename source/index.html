@@ -31,11 +31,12 @@
       <button class="main-nav__close" type="button">
         Закрыть меню
       </button>
-    </nav>
 
-    <button class="main-nav__open" type="button">
-      Открыть меню
-    </button>
+      <button class="main-nav__open" type="button">
+        Открыть меню
+      </button>
+
+    </nav>
 
   </header>
 
@@ -56,7 +57,8 @@
     <section class="goods-week">
       <h2 class="goods-week__title">Товар недели</h2>
 
-      <h3 class="knitted-baskets">Вязаные корзинки</h3>
+      <div class="knitted-baskets">
+      <h3 class="knitted-baskets__title">Вязаные корзинки</h3>
       <p class="knitted-baskets__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
       <table class="knitted-baskets__list">
@@ -79,6 +81,7 @@
       <p class="knitted-baskets__price">Цена: 990 руб.</p>
 
       <a class="knitted-baskets__order button" href="#">Заказать</a>
+      </div>
     </section>
 
     <section class="about">
@@ -162,14 +165,24 @@
 
   <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <ul class="modal__list">
-        <li class="modal__item">S</li>
-        <li class="modal__item">M</li>
-        <li class="modal__item">L</li>
-      </ul>
+
+      <form class="modal__form" action="http://echo.htmlacademy.ru" method="post">
+
+      <fieldset class="form-size">
+          <legend class="form-size__title">Выберите размер:</legend>
+          <label class="form-size__label" for="size-s">S</label>
+          <input class="form-size__input" type="radio" id="size-s" name="size">
+
+          <label class="form-size__label" for="size-m">M</label>
+          <input class="form-size__input" type="radio" id="size-m" name="size">
+
+          <label class="form-size__label" for="size-l">L</label>
+          <input class="form-size__input" type="radio" id="size-l" name="size">
+
+      </fieldset>
       <a class="modal__add-card button" href="#">Добавить</a>
-    </section>
+      </form>
+  </section>
 
 </body>
 

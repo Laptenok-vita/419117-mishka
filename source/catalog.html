@@ -31,11 +31,12 @@
       <button class="main-nav__close" type="button">
         Закрыть меню
       </button>
-    </nav>
 
-    <button class="main-nav__open" type="button">
-      Открыть меню
-    </button>
+      <button class="main-nav__open" type="button">
+        Открыть меню
+      </button>
+
+    </nav>
 
     <main class="page-main">
 
@@ -109,14 +110,24 @@
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <ul class="modal__list">
-          <li class="modal__item">S</li>
-          <li class="modal__item">M</li>
-          <li class="modal__item">L</li>
-      </ul>
-      <a class="modal__add-card button" href="#">Добавить</a>
+        <h2 class="modal__title">Добавить в корзину</h2>
+
+        <form class="modal__form" action="http://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="form-size">
+            <legend class="form-size__title">Выберите размер:</legend>
+            <label class="form-size__label" for="size-s">S</label>
+            <input class="form-size__input" type="radio" id="size-s" name="size">
+
+            <label class="form-size__label" for="size-m">M</label>
+            <input class="form-size__input" type="radio" id="size-m" name="size">
+
+            <label class="form-size__label" for="size-l">L</label>
+            <input class="form-size__input" type="radio" id="size-l" name="size">
+
+        </fieldset>
+        <a class="modal__add-card button" href="#">Добавить</a>
+        </form>
     </section>
 
 </body>
