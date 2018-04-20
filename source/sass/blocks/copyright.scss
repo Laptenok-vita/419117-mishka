@@ -1,0 +1,35 @@
+.copyright {
+  position: relative;
+
+  min-height: 80px;
+  padding: 0 30px;
+
+  background-color: #f1f1f1;
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 23px 0 0 40px;
+
+  font-size: 19px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.copyright__link {
+  font-size: 0;
+}
+
+.copyright__link::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 68px;
+
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

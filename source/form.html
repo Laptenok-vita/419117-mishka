@@ -3,31 +3,37 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo-link" href="index.html">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
+          <a class="site-list__link" href="#">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
+          <a class="site-list__link" href="#">Поиск по сайту</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
+          <a class="site-list__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      <button class="main-nav__close" type="button">Закрыть меню</button>
-      <button class="main-nav__open" type="button">Открыть меню</button>
+      <button class="main-nav__close visually-hidden" type="button">
+        Закрыть меню
+      </button>
+      <button class="main-nav__open visually-hidden" type="button">
+        Открыть меню
+      </button>
     </nav>
   </header>
 
@@ -91,21 +97,21 @@
       <fieldset class="form__group">
         <legend class="form__title">ТЕЛ</legend>
         <div class="input-tel">
-          <label class="input-tel__label" for="user-phone">Введите Ваш номер телефона</label>
+          <label class="input-tel__label visually-hidden" for="user-phone">Введите Ваш номер телефона</label>
           <input class="input-tel__input" type="tel" id="user-phone" name="user-phone" placeholder="+7 ХХХ ХХ ХХ*" required>
         </div>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__title">E-mail</legend>
         <div class="input-email">
-          <label class="input-email__label" for="user-email">Введите Ваш e-mail</label>
+          <label class="input-email__label visually-hidden" for="user-email">Введите Ваш e-mail</label>
           <input class="input-email__input" type="email" id="user-email" name="user-email" placeholder="Ваш Email*" required>
         </div>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__title">ДОП</legend>
         <div class="input-textarea">
-          <label class="input-textarea__label" for="user-wishes">Опишите пожелания к заказу</label>
+          <label class="input-textarea__label visually-hidden" for="user-wishes">Опишите пожелания к заказу</label>
           <textarea class="input-textarea__input" id="user-wishes" name="user-wishes">Опишите все ваши пожелания к заказу</textarea>
         </div>
       </fieldset>

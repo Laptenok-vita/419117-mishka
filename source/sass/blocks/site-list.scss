@@ -1,0 +1,21 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  margin: 0 auto;
+  padding: 27px 0 28px 45px;
+
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}

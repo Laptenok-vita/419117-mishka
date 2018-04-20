@@ -1,0 +1,19 @@
+.input-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-text__label {
+  padding: 21px 0 12px;
+}
+
+.input-text__input {
+  width: 260px;
+
+  font-weight: 400;
+  font-size: inherit;
+  line-height: 18px;
+  font-family: inherit;
+  color: #444444;
+}

@@ -1,0 +1,72 @@
+.modal {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 36px 0 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form-modal__title {
+  margin: 0 0 13px;
+  padding: 13px 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+}
+
+.form-modal__group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-radio {
+  display: inline-block;
+  width: 77px;
+  margin: 0 0 30px 7px;
+  padding: 12px 0;
+
+  text-align: center;
+
+  border: 2px solid #ececec;
+}
+
+.form-radio:last-child {
+  margin: 0;
+}
+
+.modal__submit {
+  display: block;
+
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #63d1bb;
+  border: none;
+}
+
+.form-radio__label {
+  font-size: 17px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.form-radio__input {
+  display: none;
+}
