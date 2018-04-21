@@ -10,9 +10,9 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $black;
 
-  background-color: #f1f1f1;
+  background-color: $light-grey;
 }
 
 .page-main__text {
@@ -22,5 +22,5 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $color-text;
 }

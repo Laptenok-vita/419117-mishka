@@ -11,7 +11,7 @@
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -23,7 +23,7 @@
   font-size: 15px;
   line-height: 30px;
   text-align: center;
-  color: #444444;
+  color: $color-text;
 }
 
 .form-modal__group {
@@ -41,7 +41,7 @@
 
   text-align: center;
 
-  border: 2px solid #ececec;
+  border: 2px solid $grey-border;
 }
 
 .form-radio:last-child {
@@ -53,18 +53,18 @@
 
   font-size: 17px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: $aquamarine-lighter;
   border: none;
 }
 
 .form-radio__label {
   font-size: 17px;
   line-height: 20px;
-  color: #444444;
+  color: $color-text;
 }
 
 .form-radio__input {

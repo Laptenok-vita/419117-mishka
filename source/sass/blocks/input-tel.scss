@@ -1,6 +1,6 @@
 .input-tel {
-  margin: 2px 0 2px;
-  padding: 10px 0;
+  margin: 5px 0 32px;
+  padding: 12px 0;
 }
 
 .input-tel__input {
@@ -10,5 +10,6 @@
   font-size: inherit;
   line-height: 18px;
   font-family: inherit;
-  color: #444444;
+  color: $color-text;
+  border: none;
 }

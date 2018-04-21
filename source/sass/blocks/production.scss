@@ -2,7 +2,7 @@
   margin: 0 0 58px;
   padding: 0 30px;
 
-  border: 1px solid #ececec;
+  border: 1px solid $grey-border;
 }
 
 .production__title {
@@ -17,17 +17,6 @@
   position: relative;
 }
 
-// .production__video::before {
-//   content: "";
-//   position: absolute;
-//   width: 101px;
-//   height: 77px;
-//   top: 130px;
-//   left: 75px;
-//   background-image: url("../img/icon-video.svg");
-//   background-repeat: no-repeat;
-//   background-position: 0 0;
-// }
 .production__description {
   margin: 0 0 24px 0;
   padding: 23px 0 0 34px;
@@ -35,7 +24,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $color-text;
 }
 
 .production__link {

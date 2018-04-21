@@ -22,7 +22,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $color-text;
 }
 
 .reviews__author {
@@ -31,13 +31,13 @@
 
   font-size: 17px;
   line-height: 30px;
-  color: #000000;
+  color: $black;
   font-style: normal;
 }
 
 .reviews__author-link {
   font-weight: 400;
-  color: #444444;
+  color: $color-text;
   text-decoration: none;
 }
 
@@ -54,8 +54,8 @@
 
   font-size: 0;
 
-  background-color: #ffffff;
-  border: 1px solid #ececec;
+  background-color: $white;
+  border: 1px solid $grey-border;
 }
 
 .reviews__write {

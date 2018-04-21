@@ -1,10 +1,11 @@
-.input-radio__label {
-  display: block;
+.input-radio {
   margin: 0;
-  padding: 26px 0 0 63px;
+  padding: 15px 0 7px 63px;
+}
 
+.input-radio__label {
   line-height: 18px;
-  color: #000000;
+  color: $black;
 }
 
 .input-radio__input {

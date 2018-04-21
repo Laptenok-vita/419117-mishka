@@ -23,7 +23,7 @@
 
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -34,10 +34,10 @@
   list-style: none;
 }
 
-.categories__item--1 {
-  background-color: #63d1bb;
+.categories__item--lighter {
+  background-color: $aquamarine-lighter;
 }
 
-.categories__item--2 {
-  background-color: #56c3b2;
+.categories__item--darker {
+  background-color: $aquamarine-darker;
 }
