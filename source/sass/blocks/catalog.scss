@@ -1,0 +1,65 @@
+.catalog {
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  margin: 0 0 26px;
+  padding: 0;
+  padding-top: 33px;
+
+  list-style: none;
+}
+
+.catalog__link {
+  display: block;
+
+  text-decoration: none;
+}
+
+.catalog__photo {
+  margin-bottom: 23px;
+}
+
+.catalog__title {
+  margin: 0 0 5px;
+  padding: 0 30px;
+
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.catalog__description {
+  margin: 0 0 40px;
+  padding: 0 17px 0 30px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-text;
+}
+
+.catalog__price {
+  padding: 0 30px;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: $black;
+}
+
+.catalog__button {
+  position: relative;
+
+  margin-bottom: 35px;
+  margin-left: 80px;
+
+  border: none;
+}

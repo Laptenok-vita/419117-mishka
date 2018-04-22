@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo-link" href="index.html">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -26,10 +28,10 @@
           <a class="site-list__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      <button class="main-nav__close" type="button">
+      <button class="main-nav__close visually-hidden" type="button">
         Закрыть меню
       </button>
-      <button class="main-nav__open" type="button">
+      <button class="main-nav__open visually-hidden" type="button">
         Открыть меню
       </button>
     </nav>
@@ -41,38 +43,42 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__photo" src="" width="" height="" alt="Зайчик-попрыгайчик">
+            <img class="catalog__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
             <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
           </a>
           <p class="catalog__description">Рост 30 см, вес 200 г</p>
           <span class="catalog__price">1 200 руб.</span>
-          <button class="catalog__add-card" type="button">Добавить в корзину</button>
+          <button class="catalog__button visually-hidden" type="button">Добавить в корзину</button>
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__photo" src="" width="" height="" alt="Корзинка для белья">
+            <img class="catalog__photo" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
             <h3 class="catalog__title">Корзинка для белья</h3>
           </a>
           <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
           <span class="catalog__price">690 руб.</span>
-          <button class="catalog__add-card" type="button">Добавить в корзину</button>
+          <button class="catalog__button visually-hidden" type="button">Добавить в корзину</button>
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__photo" src="" width="" height="" alt="Большая корзинка для игрушек">
+            <img class="catalog__photo" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
             <h3 class="catalog__title">Большая корзинка для игрушек</h3>
           </a>
           <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
           <span class="catalog__price">1 500 руб.</span>
-          <button class="catalog__add-card" type="button">Добавить в корзину</button>
+          <button class="catalog__button visually-hidden" type="button">Добавить в корзину</button>
         </li>
       </ul>
     </section>
     <section class="production">
       <h2 class="production__title">Процесс производства</h2>
       <!-- poster="" задаёт адрес картинки-обложки, которая отображается, когда видео еще не загрузилось или не воспроизводится -->
-      <video class="production__video" src="" width="" height="" poster=""></video>
-      <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <video class="production__video" src="#" width="260" height="150" poster="../img/video-mobile@1x.jpg"></video>
+      <p class="production__description">По просьбам наших
+        <br>любимых фолловеров мы
+        <br>сняли для вас подробное
+        <br>видео о том, как появляются
+        <br>наши товары.</p>
       <a class="production__link button" href="#">Сделать заказ</a>
     </section>
   </main>
@@ -99,9 +105,9 @@
 
   <section class="modal">
     <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__form" action="http://echo.htmlacademy.ru" method="post">
-      <fieldset class="modal__input">
-        <legend class="modal__input__title">Выберите размер:</legend>
+    <form class="modal__form form-modal" action="http://echo.htmlacademy.ru" method="post">
+      <fieldset class="form-modal__group">
+        <legend class="form-modal__title">Выберите размер:</legend>
         <div class="form-radio">
           <label class="form-radio__label" for="size-s">S</label>
           <input class="form-radio__input" type="radio" id="size-s" name="size">
@@ -119,4 +125,5 @@
     </form>
   </section>
 </body>
+
 </html>

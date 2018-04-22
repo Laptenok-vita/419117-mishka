@@ -1,0 +1,36 @@
+.production {
+  margin: 0 0 58px;
+  padding: 0 30px;
+
+  border: 1px solid $grey-border;
+}
+
+.production__title {
+  margin: 30px 0 23px;
+  padding: 24px 0 0 91px;
+
+  font: inherit;
+  line-height: 24px;
+}
+
+.production__video {
+  position: relative;
+}
+
+.production__description {
+  margin: 0 0 24px 0;
+  padding: 23px 0 0 34px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-text;
+}
+
+.production__link {
+  display: block;
+  width: 190px;
+  margin: 0 0 34px 35px;
+
+  text-decoration: none;
+}

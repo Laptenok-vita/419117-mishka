@@ -1,0 +1,26 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-main__title {
+  margin: 0;
+  padding: 70px 0 73px;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: $black;
+
+  background-color: $light-grey;
+}
+
+.page-main__text {
+  margin: 25px 0 23px;
+  padding: 0 30px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-text;
+}

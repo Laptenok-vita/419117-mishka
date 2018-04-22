@@ -1,0 +1,53 @@
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 37px 30px 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $black;
+}
+
+.contacts__list {
+  margin: 0 0 38px;
+  padding: 0 30px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-text;
+}
+
+.contacts__field {
+  width: 78px;
+  margin: 0;
+  padding: 0 0 27px;
+
+  vertical-align: top;
+}
+
+.contacts__value {
+  margin: 0;
+  padding: 0;
+
+  vertical-align: top;
+}
+
+.contacts__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  color: $color-text;
+}
+
+.contacts__write {
+  display: block;
+  margin: 0 auto;
+
+  text-decoration: none;
+}

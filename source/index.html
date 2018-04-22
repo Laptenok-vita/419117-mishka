@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="" width="" height="" alt="Логотип">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -26,10 +28,10 @@
           <a class="site-list__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      <button class="main-nav__close" type="button">
+      <button class="main-nav__close visually-hidden" type="button">
         Закрыть меню
       </button>
-      <button class="main-nav__open" type="button">
+      <button class="main-nav__open visually-hidden" type="button">
         Открыть меню
       </button>
     </nav>
@@ -37,20 +39,27 @@
 
   <main class="page-main">
     <section class="categories">
-      <h1 class="categories__title">Милые штуки ручной работы для дома</h1>
-      <ul class="categories__list">
-        <li class="categories__item categories__item--1">
-          <a href="#">Предметы интерьера</a>
-        </li>
-        <li class="categories__item categories__item--2">
-          <a href="#">Детские игрушки</a>
-        </li>
-      </ul>
+      <h1 class="categories__title">Милые штуки ручной
+        <br> работы для дома</h1>
+      <div class="categories__list">
+        <a class="categories__link" href="#">
+          <div class="categories__item categories__item--lighter">
+            Предметы
+            <br> интерьера
+          </div>
+        </a>
+        <a class="categories__link" href="#">
+          <div class="categories__item categories__item--darker">
+            Детские
+            <br> игрушки
+          </div>
+        </a>
+      </div>
     </section>
     <section class="goods-week">
+      <h3 class="knitted-baskets__title">Вязаные корзинки</h3>
       <h2 class="goods-week__title">Товар недели</h2>
       <div class="knitted-baskets">
-        <h3 class="knitted-baskets__title">Вязаные корзинки</h3>
         <p class="knitted-baskets__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="knitted-baskets__list">
           <tr>
@@ -66,7 +75,7 @@
             <td class="knitted-baskets__value">15 см</td>
           </tr>
         </table>
-        <img class="knitted-baskets__image" src="" width="" height="" alt="">
+        <img class="knitted-baskets__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара недели">
         <p class="knitted-baskets__price">Цена: 990 руб.</p>
         <a class="knitted-baskets__order button" href="#">Заказать</a>
       </div>
@@ -74,12 +83,17 @@
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item">Экологически чистые материалы</li>
-        <li class="about__item">Скандинавский стиль по российской цене</li>
-        <li class="about__item">Увеличивает лайки на фотографиях</li>
-        <li class="about__item">Связано вручную с любовью и умилением</li>
+        <li class="about__item">Экологически
+          <br>чистые материалы</li>
+        <li class="about__item">Скандинавский стиль
+          <br>по российской цене</li>
+        <li class="about__item">Увеличивает лайки
+          <br> на фотографиях</li>
+        <li class="about__item">Связано вручную с
+          <br>любовью и умилением</li>
         <li class="about__item">Поддержка отечественного производителя</li>
-        <li class="about__item">Поставляется в подарочной упаковке</li>
+        <li class="about__item">Поставляется в
+          <br>подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
@@ -90,33 +104,38 @@
           больше лайков!
         </blockquote>
         <cite class="reviews__author">Анастасия Красильникова
-          <a href="#">@misssssiskras</a>
+          <a class="reviews__author-link" href="#">@misssssiskras</a>
         </cite>
       </div>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <div class="revies__paging">
+        <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
+      </div>
       <a class="reviews__write button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__list">
-        <tr>
+        <tr class="contacts__row">
           <td class="contacts__field">e-mail:</td>
           <td class="contacts__value">
-            <a href="#">info@mimimishkashop.ru</a>
+            <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
           </td>
         </tr>
-        <tr>
+        <tr class="contacts__row">
           <td class="contacts__field">адрес:</td>
           <td class="contacts__value">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            г. Санкт-Петербург,
+            <br>ул. Большая
+            <br>Конюшенная,
+            <br>д. 19/8, офис 101</td>
         </tr>
       </table>
       <div class="contacts__map map">
-        <img class="map__image" src="" width="" height="" alt="Адрес магазина г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBqqQDTMlC" width="560" height="400"></iframe>
+        <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="455" alt="Адрес магазина г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBqqQDTMlC" width="260" height="185"></iframe> -->
       </div>
-      <a class="contacts__write" href="#">Напишите нам</a>
+      <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -141,10 +160,11 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__form" action="http://echo.htmlacademy.ru" method="post">
-      <fieldset class="modal__input">
-        <legend class="modal__title">Выберите размер:</legend>
+    <h2 class="modal__title">Добавить
+      <br>в корзину</h2>
+    <form class="modal__form form-modal" action="http://echo.htmlacademy.ru" method="post">
+      <fieldset class="form-modal__group">
+        <legend class="form-modal__title">Выберите размер:</legend>
         <div class="form-radio">
           <label class="form-radio__label" for="size-s">S</label>
           <input class="form-radio__input" type="radio" id="size-s" name="size">
@@ -162,4 +182,5 @@
     </form>
   </section>
 </body>
+
 </html>
