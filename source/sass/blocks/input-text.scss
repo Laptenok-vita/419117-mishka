@@ -1,15 +1,16 @@
 .input-text {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
 }
 
 .input-text__label {
-  padding: 21px 0 10px;
+  padding: 0 0 0 0;
 }
 
 .input-text__input {
   width: 260px;
+  padding: 13px 0;
+
 
   font-weight: 400;
   font-size: inherit;
