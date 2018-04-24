@@ -1,14 +1,59 @@
 .goods-week {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 38px;
   padding: 0 30px;
 }
 
+.goods-week__titles {
+  display: flex;
+  flex-direction: column;
+}
+
 .goods-week__title {
+  order: 1;
   margin: 0;
-  padding: 5px 0;
+  padding: 4px 0;
 
   font-size: 17px;
   line-height: 20px;
   color: $aquamarine-lighter;
   text-transform: uppercase;
+}
+
+@media(min-width: $tablet-width) {
+  .goods-week {
+    width: auto;
+    padding: 0;
+    margin-bottom: 65px;
+  }
+  .goods-week__titles {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+  .goods-week__title {
+    width: 125px;
+    height: 55px;
+    padding: 11px 0;
+
+    text-align: center;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .goods-week {
+    margin-top: 75px;
+    margin-bottom: 97px;
+  }
+
+  .goods-week__titles {
+    padding-top: 50px;
+  }
+
+  .goods-week__title {
+    margin-left: 30px;
+    padding: 5px 20px 0 0;;
+  }
 }

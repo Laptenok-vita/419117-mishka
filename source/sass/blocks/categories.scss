@@ -1,11 +1,6 @@
-.categories {
-  background-image: url("../../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% -18px;
-}
-
 .categories__title {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 70px 30px 125px;
 
   font-size: 27px;
@@ -28,16 +23,66 @@
 }
 
 .categories__item {
-  margin: 0;
-  padding: 23px 30px 30px;
+  padding: 24px 30px 30px;
 
   list-style: none;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.categories__item--lighter {
+.categories__link--lighter {
   background-color: $aquamarine-lighter;
+  width: auto;
 }
 
-.categories__item--darker {
+.categories__link--darker {
   background-color: $aquamarine-darker;
+  width: auto;
+}
+
+@media(min-width: $tablet-width) {
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .categories__title {
+    width: $tablet-width;
+    padding: 90px 89px 375px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .categories__list {
+    display: flex;
+  }
+
+.categories__item {
+  margin: 0;
+  // width: 334px;
+  font-size: 20px;
+  line-height: 30px;
+  }
+
+  .categories__item--lighter,
+  .categories__item--darker {
+    width: 334px;
+    padding: 27px 0 28px 36px;
+  }
+
+}
+
+@media(min-width: $desktop-width) {
+.categories__link {
+  width: 50%;
+}
+
+.categories__title {
+  margin: 0 auto;
+  font-size: 53px;
+  line-height: 57px;
+  padding: 91px 0 360px 8px;
+}
 }

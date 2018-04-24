@@ -1,15 +1,32 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-.page-header__logo-link {
-  display: block;
-  padding: 23px 0;
+.page-header__text {
+  display: none;
 }
 
-.page-header__logo-image {
-  display: block;
-  margin: 0 auto;
+@media(min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    align-items: center;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .page-header__logo-link {
+    padding: 0;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+    padding: 0 100px;
+    margin: 0 auto;
+  }
 }

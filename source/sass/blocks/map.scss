@@ -1,13 +1,13 @@
 .map {
   position: relative;
-
-  margin-bottom: 33px;
+  width: 320px;
+  margin: 38px auto 35px;
 }
 
 .map::before {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 144px;
   left: 140px;
   z-index: 1;
 
@@ -17,4 +17,11 @@
   background-image: url("../img/icon-map-pin.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media(min-width: $desktop-width) {
+  .map {
+padding: 0;
+margin: 0;
+}
 }
