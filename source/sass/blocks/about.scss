@@ -28,7 +28,7 @@
   color: $black;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .about {
     width: 668px;
     margin-bottom: 80px;
@@ -62,7 +62,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .about {
     width: 1050px;
     margin: 60px auto 87px;
@@ -79,7 +79,7 @@
   .about__list {
     margin: 0 175px;
   }
-  
+
   .about__item {
     width: 350px;
   }

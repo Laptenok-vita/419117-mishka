@@ -30,7 +30,7 @@
   color: #444444;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .page-main {
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-main {
     margin-bottom: 47px;
   }
@@ -82,7 +82,7 @@
     font-size: 53px;
     line-height: 57px;
   }
-  
+
   .page-main__text {
     width: 700px;
     margin: 0 auto;

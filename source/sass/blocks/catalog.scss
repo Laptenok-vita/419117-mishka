@@ -64,7 +64,7 @@
   border: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .catalog {
     width: 668px;
     margin: 0 auto;
@@ -119,7 +119,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog {
     width: 1050px;
     margin: 0 auto 60px;
@@ -127,16 +127,16 @@
 
   .catalog__list {
     display: flex;
+    justify-content: space-between;
     width: 1050px;
     margin: 0 auto;
-    justify-content: space-between;
   }
 
   .catalog__item {
     width: 315px;
     height: 657px;
   }
-  
+
   .catalog__link-photo {
     width: 315px;
     height: 464px;

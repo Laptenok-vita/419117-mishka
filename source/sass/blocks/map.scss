@@ -20,13 +20,13 @@
   background-position: 0 0;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .map {
     margin: 56px auto 52px;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .map {
     margin: 0;
     padding: 0;

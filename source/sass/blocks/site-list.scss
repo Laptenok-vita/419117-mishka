@@ -29,7 +29,7 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,7 +107,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .site-list {
     width: 1050px;
     margin: 0 auto;
@@ -190,7 +190,7 @@
       display: block;
       padding: 16px 34px 47px;
     }
-    
+
     &--delivery {
       display: flex;
       justify-content: flex-end;

@@ -36,7 +36,7 @@
   text-decoration: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .production {
     display: flex;
     flex-direction: column;
@@ -74,7 +74,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .production {
     flex-wrap: wrap;
     width: 1050px;
@@ -96,7 +96,7 @@
     width: 230px;
     margin: 0;
   }
-  
+
   .production__video {
     margin-right: 75px;
   }

@@ -56,7 +56,7 @@
   text-decoration: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .knitted-baskets {
     flex-wrap: wrap;
     height: 410px;
@@ -110,7 +110,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .knitted-baskets {
     height: 635px;
     margin-top: -115px;
@@ -161,7 +161,7 @@
     width: 96px;
     padding: 8px 4px 12px;
   }
-  
+
   .knitted-baskets__value {
     padding: 0 0 7px 7px;
   }

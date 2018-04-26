@@ -13,7 +13,7 @@
   display: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@
   .social {
     width: 145px;
   }
-  
+
   .copyright__text {
     width: 190px;
 
@@ -46,7 +46,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1150px;
     margin: 0 auto;

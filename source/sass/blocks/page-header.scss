@@ -4,7 +4,7 @@
   padding: 0 30px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .page-header {
     width: $tablet-width;
     margin: 0 auto;
@@ -12,7 +12,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width;
     margin: 0 auto;

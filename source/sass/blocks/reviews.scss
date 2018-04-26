@@ -62,7 +62,7 @@
   text-decoration: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .reviews {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +93,8 @@
 
     font-size: 18px;
     line-height: 24px;
-    &-link {
+
+    &--link {
       line-height: 30px;
     }
   }
@@ -113,7 +114,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .reviews {
     width: 1050px;
     padding: 72px 0 0 172px;
@@ -138,7 +139,7 @@
   .revies__paging {
     margin: 16px 0 95px 0;
   }
-  
+
   .reviews__write {
     margin-top: 5px;
   }

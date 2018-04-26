@@ -57,7 +57,7 @@
   text-decoration: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .contacts {
     width: 668px;
     margin: 0 auto 55px;
@@ -107,7 +107,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@
   .contacts__value {
     padding: 35px 0 0 0;
   }
-  
+
   .contacts__write {
     margin: 78px 50px 0 175px;
   }

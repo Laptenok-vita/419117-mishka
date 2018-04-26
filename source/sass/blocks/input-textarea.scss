@@ -16,14 +16,14 @@
   border: 1px solid $color-text;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .input-textarea__input {
     width: 500px;
   }
 }
 
-@media(min-width: $desktop-width) {
-.input-textarea__input {
-  width: 700px;
-}
+@media (min-width: $desktop-width) {
+  .input-textarea__input {
+    width: 700px;
+  }
 }

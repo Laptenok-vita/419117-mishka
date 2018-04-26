@@ -30,11 +30,13 @@
   line-height: 24px;
   color: $white;
   text-decoration: none;
+
   &--lighter {
     width: auto;
 
     background-color: $aquamarine-lighter;
   }
+
   &--darker {
     width: auto;
 
@@ -50,7 +52,7 @@
   list-style: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .categories {
     display: flex;
     flex-direction: column;
@@ -92,16 +94,18 @@
 
     font-size: 20px;
     line-height: 30px;
+
     &--lighter {
       margin-left: auto;
     }
+
     &--darker {
       margin-right: auto;
     }
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .categories__wrapper {
     width: 1050px;
     min-height: 628px;
@@ -124,7 +128,7 @@
     width: 1050px;
     margin: 0 auto;
   }
-  
+
   .categories__item {
     width: 525px;
     padding: 27px 35px;

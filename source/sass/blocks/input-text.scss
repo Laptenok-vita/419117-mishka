@@ -20,7 +20,7 @@
   border: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .input-text {
     flex-direction: row;
     width: 500px;
@@ -29,7 +29,7 @@
   .input-text__label {
     padding: 10px;
   }
-  
+
   .input-text__input {
     width: 100%;
     padding: 10px 10px 10px 18px;
@@ -39,7 +39,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .input-text {
     width: 700px;
     margin-right: 5px;
