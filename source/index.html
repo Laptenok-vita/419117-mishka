@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
-  <!-- <link href="sass/outlines-academy.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -36,8 +35,19 @@
         <li class="site-list__item site-list__item--card">
           <a class="site-list__link site-list__link--card" href="#">Корзина: пока пуста</a>
         </li>
-      </ul>
 
+        <li class="site-list__item site-list__item--new">
+          <a class="site-list__likn site-list__link--new" href="#">Новые поступления</a>
+        </li>
+
+        <li class="site-list__item site-list__item--sale">
+          <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+        </li>
+
+      <li class="site-list__item site-list__item--delivery">
+        <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
+      </li>
+    </ul>
       <button class="main-nav__button visually-hidden" type="button">
         Открыть меню
       </button>
@@ -46,37 +56,28 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title visually-hidden">Магазин милых вещиц</h1>
+    <section class="categories">
+      <div class="categories__wrapper">
 
-    <div class="page-main__menu">
-
-      <div class="page-main__list">
-        <a class="page-main__link" href="#">Новые поступления</a>
-        <a class="page-main__link" href="#">Распродажа</a>
-        <p class="page-main__text">Бесплатная доставка по России</p>
+      <h1 class="categories__title">Милые штуки ручной
+        <br> работы для дома</h1>
+      </div>
+      <div class="categories__list">
+        <a class="categories__link categories__link--lighter" href="#">
+          <div class="categories__item categories__item--lighter">
+            Предметы
+            <br> интерьера
+          </div>
+        </a>
+        <a class="categories__link categories__link--darker" href="#">
+          <div class="categories__item categories__item--darker">
+            Детские
+            <br> игрушки
+          </div>
+        </a>
       </div>
 
-      <section class="categories">
-
-        <h1 class="categories__title">Милые штуки ручной
-          <br> работы для дома</h1>
-
-        <div class="categories__list">
-          <a class="categories__link categories__link--lighter" href="#">
-            <div class="categories__item categories__item--lighter">
-              Предметы
-              <br> интерьера
-            </div>
-          </a>
-          <a class="categories__link categories__link--darker" href="#">
-            <div class="categories__item categories__item--darker">
-              Детские
-              <br> игрушки
-            </div>
-          </a>
-        </div>
-
-      </section>
+    </section>
     </div>
 
     <section class="goods-week">
@@ -172,28 +173,28 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-    <div class="page-footer__logo">
-      <a class="page-footer__logo-link">
-        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
-      </a>
-    </div>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagramm" href="#">Инстаграм</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Твиттер</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
-    </div>
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link">
+          <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+        </a>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagramm" href="#">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+      </div>
     </div>
   </footer>
 

@@ -1,7 +1,7 @@
 .about {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .about__title {
@@ -62,15 +62,14 @@
 
 @media(min-width: $desktop-width) {
   .about {
-    margin-top: 65px;
+    margin: 60px auto 87px;
     width: 1050px;
-    margin-bottom: 87px;
   }
   .about__title {
     font-size: 53px;
     line-height: 57px;
     margin-left: 168px;
-    padding: 58px 0 51px;
+    padding: 0 0 51px;
   }
 
   .about__list {

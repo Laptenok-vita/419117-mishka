@@ -1,3 +1,13 @@
+.categories {
+  z-index: -1;
+
+  margin-bottom: 3px;
+
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -18px;
+}
+
 .categories__title {
   width: 320px;
   margin: 0 auto;
@@ -20,69 +30,99 @@
   line-height: 24px;
   color: $white;
   text-decoration: none;
+  &--lighter {
+    width: auto;
+
+    background-color: $aquamarine-lighter;
+  }
+  &--darker {
+    width: auto;
+
+    background-color: $aquamarine-darker;
+  }
 }
 
 .categories__item {
+  width: 320px;
+  margin: 0 auto;
   padding: 24px 30px 30px;
 
   list-style: none;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.categories__link--lighter {
-  background-color: $aquamarine-lighter;
-  width: auto;
-}
-
-.categories__link--darker {
-  background-color: $aquamarine-darker;
-  width: auto;
 }
 
 @media(min-width: $tablet-width) {
   .categories {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    order: 1;
+    width: auto;
+    min-height: 748px;
+    margin-top: -90px;
+
+    background-color: $grey-categories;
+  }
+  .categories__wrapper {
+    width: 668px;
+    min-height: 627px;
+    margin: 0 auto;
   }
 
   .categories__title {
-    width: $tablet-width;
-    padding: 90px 89px 375px 0;
+    width: 668px;
+    margin: 0 auto;
+    padding: 155px 20px 20px;;
+
     font-size: 43px;
     line-height: 50px;
   }
-
   .categories__list {
     display: flex;
   }
-
-.categories__item {
-  margin: 0;
-  // width: 334px;
-  font-size: 20px;
-  line-height: 30px;
+  .categories__link {
+    display: flex;
+    flex-grow: 1;
   }
-
-  .categories__item--lighter,
-  .categories__item--darker {
+  .categories__item {
     width: 334px;
-    padding: 27px 0 28px 36px;
-  }
+    margin: 0;
+    padding: 30px 35px;
 
+    font-size: 20px;
+    line-height: 30px;
+    &--lighter {
+      margin-left: auto;
+    }
+    &--darker {
+      margin-right: auto;
+    }
+  }
 }
 
 @media(min-width: $desktop-width) {
-.categories__link {
-  width: 50%;
-}
+  .categories__wrapper {
+    width: 1050px;
+    min-height: 628px;
+    margin: 0 auto;
+  }
 
-.categories__title {
-  margin: 0 auto;
-  font-size: 53px;
-  line-height: 57px;
-  padding: 91px 0 360px 8px;
-}
+  .categories__link {
+    width: 50%;
+  }
+
+  .categories__title {
+    margin: 0 auto;
+    padding: 155px 20px 20px 25px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .categories__list {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .categories__item {
+    width: 525px;
+    padding: 27px 35px;
+  }
 }
