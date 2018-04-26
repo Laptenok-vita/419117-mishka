@@ -60,6 +60,7 @@
 
     background-color: $grey-categories;
   }
+
   .categories__wrapper {
     width: 668px;
     min-height: 627px;
@@ -69,18 +70,21 @@
   .categories__title {
     width: 668px;
     margin: 0 auto;
-    padding: 155px 20px 20px;;
+    padding: 155px 20px 20px;
 
     font-size: 43px;
     line-height: 50px;
   }
+
   .categories__list {
     display: flex;
   }
+
   .categories__link {
     display: flex;
     flex-grow: 1;
   }
+
   .categories__item {
     width: 334px;
     margin: 0;
@@ -120,7 +124,7 @@
     width: 1050px;
     margin: 0 auto;
   }
-
+  
   .categories__item {
     width: 525px;
     padding: 27px 35px;

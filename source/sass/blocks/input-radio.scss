@@ -5,13 +5,13 @@
 
 .input-radio__label {
   padding: 17px 5px;
+
   color: $black;
 }
 
 .input-radio__input {
   display: none;
 }
-
 
 @media(min-width: $tablet-width) {
   .input-radio {

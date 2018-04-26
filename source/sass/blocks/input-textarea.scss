@@ -21,3 +21,9 @@
     width: 500px;
   }
 }
+
+@media(min-width: $desktop-width) {
+.input-textarea__input {
+  width: 700px;
+}
+}
