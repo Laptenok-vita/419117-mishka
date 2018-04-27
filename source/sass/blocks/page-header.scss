@@ -1,15 +1,21 @@
 .page-header {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-.page-header__logo-link {
-  display: block;
-  padding: 23px 0;
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 }
 
-.page-header__logo-image {
-  display: block;
-  margin: 0 auto;
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 }

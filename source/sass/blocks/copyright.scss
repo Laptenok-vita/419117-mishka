@@ -3,8 +3,6 @@
 
   min-height: 80px;
   padding: 0 30px;
-
-  background-color: $light-grey;
 }
 
 .copyright__text {
@@ -32,4 +30,10 @@
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding: 36px 0 10px 38px;
+  }
 }

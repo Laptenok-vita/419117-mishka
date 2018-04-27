@@ -10,3 +10,11 @@
 .input-checkbox__input {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .input-checkbox__label {
+    width: 200px;
+    margin: 10px 0;
+    padding: 17px 0 17px 75px;
+  }
+}

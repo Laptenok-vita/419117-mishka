@@ -1,21 +1,26 @@
 .form {
-  margin: 0 auto 57px;
-  padding: 0 30px;
+  width: auto;
 }
 
 .form__title {
   margin: 0;
-  padding: 0 0;
+  padding: 0;
 
   color: $aquamarine-lighter;
   text-transform: uppercase;
 }
 
 .form__group {
-  margin: 0 0;
+  margin: 0;
   padding: 0;
 
   border: none;
+}
+
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto 57px;
+  padding: 0 30px;
 }
 
 .form__radio-list {
@@ -43,6 +48,12 @@
   margin: 0 0 35px 0;
 }
 
+.form__signature {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .form__text {
   margin: 0;
   padding: 0;
@@ -57,4 +68,123 @@
   margin-top: 31px;
 
   font: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__group:nth-of-type(even) {
+    background-color: $grey-form;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .form__title {
+    width: 167px;
+    margin: 0;
+    padding-top: 70px;
+  }
+
+  .form__radio-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 335px;
+    height: 228px;
+    margin: 0;
+  }
+
+  .input-radio__label {
+    padding: 17px 0;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+    width: 450px;
+    height: 304px;
+    margin: 0;
+    padding-left: 50px;
+  }
+
+  .form__checkbox-item {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .form__text-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 304px;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .form__tel-list {
+    height: 65px;
+    margin: 0;
+  }
+
+  .form__mail-list {
+    height: 65px;
+    margin: 0;
+  }
+
+  .form__signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .form__text {
+    order: 1;
+  }
+
+  .form__submit {
+    width: 230px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    width: 1150px;
+    margin: 0 auto 57px;
+    padding: 0 50px;
+  }
+
+  .form__title {
+    width: 175px;
+    padding: 70px 63px 20px;
+
+    white-space: nowrap;
+  }
+
+  .form__checkbox-list {
+    width: 735px;
+    height: 230px;
+  }
+
+  .form__tel-list {
+    height: 104px;
+  }
+
+  .form__mail-list {
+    height: 104px;
+  }
 }

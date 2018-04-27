@@ -1,4 +1,55 @@
 .page-footer {
+  width: auto;
+
+  background-color: $light-grey;
+}
+
+.page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 143px;
+
+    background-color: $light-grey;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .social {
+    width: 145px;
+  }
+
+  .copyright__text {
+    width: 190px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 }

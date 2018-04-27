@@ -1,0 +1,24 @@
+.form-radio {
+  display: inline-block;
+  width: 77px;
+  margin: 0 0 30px 7px;
+  padding: 12px 0;
+
+  text-align: center;
+
+  border: 2px solid $grey-border;
+}
+
+.form-radio:last-child {
+  margin: 0;
+}
+
+.form-radio__label {
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-text;
+}
+
+.form-radio__input {
+  display: none;
+}
