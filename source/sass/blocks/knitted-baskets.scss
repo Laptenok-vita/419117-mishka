@@ -40,6 +40,11 @@
   padding: 0 0 0 21px;
 }
 
+.knitted-baskets__image {
+  width: 260px;
+  height: 315px;
+}
+
 .knitted-baskets__price {
   display: block;
   margin: 19px 0;
@@ -58,11 +63,13 @@
 
 @media (min-width: $tablet-width) {
   .knitted-baskets {
+    position: relative;
     flex-wrap: wrap;
-    height: 410px;
   }
 
   .knitted-baskets__title {
+    z-index: 1;
+
     padding: 0;
 
     font-size: 43px;
@@ -71,9 +78,9 @@
   }
 
   .knitted-baskets__description {
-    width: 290px;
+    width: 50%;
     margin: 0;
-    padding: 0;
+    padding: 0 35px 0 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -81,7 +88,11 @@
 
   .knitted-baskets__list {
     width: 290px;
-    margin: 40px 0 50px;
+    margin: 40px 43px 50px 0;
+  }
+
+  .knitted-baskets__field {
+    padding: 7px 0 12px;
   }
 
   .knitted-baskets__value {
@@ -89,17 +100,18 @@
   }
 
   .knitted-baskets__image {
+    position: absolute;
     order: 1;
-    width: 334px;
-    height: 406px;
-    margin-top: 10px;
-    margin-left: auto;
+    width: 333px;
+    height: 404px;
+    top: 10px;
+    right: 0;
   }
 
   .knitted-baskets__price {
-    width: 290px;
-    margin: 0 0 21px;
-    padding: 7px 7px;
+    width: 50%;
+    margin: 0 0 25px;
+    padding: 7px 55px 7px 10px;
 
     font-size: 20px;
     line-height: 24px;
@@ -107,16 +119,18 @@
 
   .knitted-baskets__order {
     width: 290px;
+    margin-right: 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .knitted-baskets {
-    height: 635px;
     margin-top: -115px;
   }
 
   .knitted-baskets__title {
+    z-index: 1;
+
     order: 1;
     min-height: 40px;
     margin: 0;
@@ -128,41 +142,43 @@
   }
 
   .knitted-baskets__description {
-    width: 292px;
+    width: 30%;
     margin: 160px 56px 10px 175px;
+    padding: 0 15px 0 0;
   }
 
   .knitted-baskets__list {
-    width: 292px;
+    width: 30%;
     margin-right: 58px;
     margin-bottom: 100px;
     margin-left: 170px;
   }
 
+  .knitted-baskets__field {
+    padding: 8px 4px 12px;
+  }
+
+  .knitted-baskets__value {
+    text-align: left;
+  }
+
   .knitted-baskets__price {
-    width: 292px;
-    margin: 0 58px 23px 175px;
+    width: 30%;
+    margin: 0 0 27px 162px;
     padding: 7px 7px;
   }
 
   .knitted-baskets__order {
-    margin: 0 50px 0 175px;
+    width: 28%;
+    margin: 0 0 0 174px;
   }
 
   .knitted-baskets__image {
     z-index: -1;
 
-    order: 1;
     width: 525px;
+    height: 636px;
     margin: 0;
-  }
-
-  .knitted-baskets__field {
-    width: 96px;
-    padding: 8px 4px 12px;
-  }
-
-  .knitted-baskets__value {
-    padding: 0 0 7px 7px;
+    top: 0;
   }
 }

@@ -17,12 +17,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .input-textarea {
+    width: 75%;
+    margin: 4px 0 0;
+    padding: 0;
+  }
+
   .input-textarea__input {
-    width: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 14px 0 0 15px;
+
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .input-textarea {
+    width: 67%;
+    margin: 0 0 -5px 17px;
+  }
+
   .input-textarea__input {
     width: 700px;
   }

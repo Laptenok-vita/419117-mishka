@@ -16,7 +16,11 @@
         <li class="site-list__item site-list__item--logo">
 
           <a class="page-header__logo-link site-list__link site-list__link--logo" href="#">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+            <picture class="page-header__logo-image">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип">
+            </picture>
           </a>
         </li>
 
@@ -44,10 +48,10 @@
           <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
         </li>
 
-      <li class="site-list__item site-list__item--delivery">
-        <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
-      </li>
-    </ul>
+        <li class="site-list__item site-list__item--delivery">
+          <a class="site-list__link site-list__link--delivery" href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
       <button class="main-nav__button visually-hidden" type="button">
         Открыть меню
       </button>
@@ -59,8 +63,8 @@
     <section class="categories">
       <div class="categories__wrapper">
 
-      <h1 class="categories__title">Милые штуки ручной
-        <br> работы для дома</h1>
+        <h1 class="categories__title">Милые штуки ручной
+          <br> работы для дома</h1>
       </div>
       <div class="categories__list">
         <a class="categories__link categories__link--lighter" href="#">
@@ -102,7 +106,11 @@
           </tr>
         </table>
 
-        <img class="knitted-baskets__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара недели">
+        <picture class="knitted-baskets__image">
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg">
+          <img srcset="img/triple-set-mobile@1x.jpg, img/triple-set-mobile@2x.jpg" alt="Фото товара недели">
+        </picture>
 
         <p class="knitted-baskets__price">Цена: 990 руб.</p>
 
@@ -112,16 +120,16 @@
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item">Экологически
+        <li class="about__item about__item--eco">Экологически
           <br>чистые материалы</li>
-        <li class="about__item">Скандинавский стиль
+        <li class="about__item about__item--style">Скандинавский стиль
           <br>по российской цене</li>
-        <li class="about__item">Увеличивает лайки
+        <li class="about__item about__item--like">Увеличивает лайки
           <br> на фотографиях</li>
-        <li class="about__item">Связано вручную с
+        <li class="about__item about__item--manually">Связано вручную с
           <br>любовью и умилением</li>
-        <li class="about__item">Поддержка отечественного производителя</li>
-        <li class="about__item">Поставляется в
+        <li class="about__item about__item--patriotism">Поддержка отечественного производителя</li>
+        <li class="about__item about__item--gift">Поставляется в
           <br>подарочной упаковке</li>
       </ul>
     </section>
@@ -129,7 +137,7 @@
       <h2 class="reviews__title">Отзывы</h2>
 
       <blockquote class="reviews__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-        В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+        В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали более стильными, а также набирают
         больше лайков!
       </blockquote>
 
@@ -164,7 +172,11 @@
         </ul>
       </div>
       <div class="contacts__map map">
-        <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="455" alt="Адрес магазина г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <picture class="map__image">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg">
+          <img srcset="img/map-mobile@1x.jpg, img/map-mobile@2x.jpg" alt="Адрес магазина г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
         <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBqqQDTMlC" width="260" height="185"></iframe> -->
       </div>
       <a class="contacts__write button" href="#">Напишите нам</a>
@@ -175,7 +187,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link">
-          <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип">
         </a>
       </div>
       <div class="social">

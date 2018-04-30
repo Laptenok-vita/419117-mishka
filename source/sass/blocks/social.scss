@@ -68,3 +68,9 @@
     background-position: 0 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 145px;
+  }
+}

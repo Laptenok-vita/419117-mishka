@@ -2,13 +2,19 @@
   position: relative;
 
   width: 320px;
+  margin: 0 auto;
+}
+
+.map__image {
+  width: 322px;
+  height: 457px;
   margin: 38px auto 35px;
 }
 
 .map::before {
   content: "";
   position: absolute;
-  top: 144px;
+  top: 185px;
   left: 140px;
   z-index: 1;
 
@@ -22,13 +28,40 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    margin: 56px auto 52px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .map__image {
+    width: 768px;
+    height: 457px;
+    margin: 55px auto 50px;
+  }
+
+  .map::before {
+    top: 195px;
+    left: 362px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
-    margin: 0;
-    padding: 0;
+    position: relative;
+  }
+
+  .map__image {
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    left: 390px;
+
+    order: 1;
+    width: 525px;
+    height: 457px;
+  }
+
+  .map::before {
+    top: -180px;
+    left: 628px;
   }
 }

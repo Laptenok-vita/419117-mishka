@@ -18,22 +18,11 @@
   font-size: 0;
 }
 
-.copyright__link::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 68px;
-
-  width: 27px;
-  height: 34px;
-
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 @media (min-width: $tablet-width) {
   .copyright__text {
     padding: 36px 0 10px 38px;
+    width: 190px;
+
+    text-align: left;
   }
 }

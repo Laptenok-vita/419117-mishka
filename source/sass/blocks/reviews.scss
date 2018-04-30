@@ -15,12 +15,16 @@
 
 .reviews__item {
   margin: 0;
-  padding: 23px 0;
+  padding: 49px 0 23px 3px;
 
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: $color-text;
+}
+
+.reviews__item br {
+  display: none;
 }
 
 .reviews__author {
@@ -35,6 +39,8 @@
 
 .reviews__author-link {
   font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
   color: $color-text;
   text-decoration: none;
 }
@@ -67,19 +73,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 668px;
-    margin: 0 auto 100px;
-    padding: 78px 0 0 0;
+    width: 768px;
+    margin: 0 auto 90px;
+    padding: 77px 0 15px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 350px 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-position: 0 0;
+      background-size: 350px 457px;
+    }
   }
 
+
   .reviews__title {
+    padding: 0 45px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .reviews__item {
     order: 1;
-    padding: 45px 0 23px;
+    padding: 45px 50px 23px;
 
     font-size: 17px;
     line-height: 30px;
@@ -89,7 +108,7 @@
     display: flex;
     flex-direction: column;
     order: 1;
-    margin-top: 35px;
+    margin: 35px 50px 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -102,7 +121,7 @@
   .revies__paging {
     order: 2;
     width: 168px;
-    margin-top: 40px;
+    margin: 35px 50px;
   }
 
   .reviews__button {
@@ -111,6 +130,7 @@
 
   .reviews__write {
     width: 176px;
+    margin: 3px 50px 0;
   }
 }
 
@@ -123,10 +143,16 @@
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+    padding: 0;
   }
 
   .reviews__item {
     width: 775px;
+    padding: 45px 0 25px 3px;
+  }
+
+  .reviews__item br {
+    display: block;
   }
 
   .reviews__author {
@@ -141,6 +167,6 @@
   }
 
   .reviews__write {
-    margin-top: 5px;
+    margin: 10px 0 0;
   }
 }

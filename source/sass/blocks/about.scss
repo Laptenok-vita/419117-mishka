@@ -30,12 +30,15 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    width: 668px;
-    margin-bottom: 80px;
+    width: 768px;
+    padding: 0 50px;
+    margin: 0 auto 30px;
   }
 
   .about__title {
-    padding: 55px 0 50px;
+    width: 669px;
+    padding: 50px 0;
+    margin: 0 auto;
 
     font-size: 43px;
     line-height: 50px;
@@ -43,18 +46,35 @@
 
   .about__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 410px;
   }
 
   .about__item {
-    width: 334px;
-    margin: 0 0 59px 0;
-    padding: 52px 0 0;
+    width: 50%;
+    padding: 55px 0;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--manually {
+      order: 1;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--patriotism {
+      order: 3;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--gift {
+      order: 5;
+    }
   }
 
   .about__item:nth-of-type(3n) {
@@ -64,8 +84,9 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    width: 1050px;
+    width: 1150px;
     margin: 60px auto 87px;
+    padding: 0 50px;
   }
 
   .about__title {
@@ -81,6 +102,8 @@
   }
 
   .about__item {
-    width: 350px;
+    width: 50%;
+    margin: 0 0 60px;
+    padding: 50px 0 0 0;
   }
 }
