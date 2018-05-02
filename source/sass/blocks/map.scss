@@ -2,7 +2,7 @@
   position: relative;
 
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 38px;
 }
 
 .map__image {
@@ -14,7 +14,7 @@
 .map::before {
   content: "";
   position: absolute;
-  top: 185px;
+  top: 145px;
   left: 140px;
   z-index: 1;
 

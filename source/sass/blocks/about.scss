@@ -18,6 +18,7 @@
   padding: 0;
 
   list-style: none;
+  position: relative;
 }
 
 .about__item {
@@ -26,6 +27,42 @@
 
   list-style: none;
   color: $black;
+}
+
+.about__item--eco-image {
+  position: absolute;
+  top: 2px;
+  left: 38px;
+}
+
+.about__item--style-image {
+  position: absolute;
+  top: 127px;
+  left: 29px;
+}
+
+.about__item--like-image {
+  position: absolute;
+  top: 254px;
+  left: 38px;
+}
+
+.about__item--manually-image {
+  position: absolute;
+  top: 374px;
+  left: 34px;
+}
+
+.about__item--patriotism-image {
+  position: absolute;
+  top: 498px;
+  left: 24px;
+}
+
+.about__item--gift-image {
+  position: absolute;
+  top: 620px;
+  left: 33px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,8 +1,26 @@
 .goods-week {
+  position: relative;
+
   width: 320px;
   margin: 0 auto;
   margin-bottom: 38px;
   padding: 0 30px;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 7px;
+
+    bottom: -42px;
+    left: 0;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 300px 7px;
+  }
 }
 
 .goods-week__titles {
@@ -25,8 +43,8 @@
 @media (min-width: $tablet-width) {
   .goods-week {
     width: 768px;
-    padding: 0 50px;
     margin: 0 auto 65px;
+    padding: 0 50px;
   }
 
   .goods-week__titles {
