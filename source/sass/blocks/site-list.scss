@@ -3,9 +3,11 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+
 }
 
 .site-list__item {
+  position: relative;
   list-style: none;
   border-top: 1px solid $grey-border;
 
@@ -20,9 +22,22 @@
   }
 }
 
+.site-list__item--search-image {
+  // content: "";
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  top: 33px;
+  left: 2px;
+
+  opacity: 0.2;
+}
+
 .site-list__link {
   display: block;
-  padding: 26px 0 27px 45px;
+  padding: 27px 0 27px 45px;
 
   line-height: 24px;
   color: $black;
@@ -53,6 +68,7 @@
 
   .site-list__item {
     height: 89px;
+    border: none;
 
     &--search {
       order: 1;
@@ -60,6 +76,8 @@
       margin-left: auto;
 
       font-size: 0;
+      border-left: 1px solid $grey-border;
+      border-right: 1px solid $grey-border;
     }
 
     &--card {
@@ -90,6 +108,11 @@
       line-height: 24px;
       color: $color-text;
     }
+  }
+
+  .site-list__item--search-image {
+    top: 37px;
+    left: 34px;
   }
 
   .site-list__link {

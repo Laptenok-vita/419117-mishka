@@ -1,6 +1,19 @@
 .social {
   min-height: 80px;
   padding: 0 30px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 1px;
+
+    bottom: 0;
+    left: 30px;
+
+    background-color: $grey-border;
+  }
 }
 
 .social__list {
@@ -72,5 +85,26 @@
 @media (min-width: $tablet-width) {
   .social {
     width: 145px;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .social__link--instagramm {
+    top: 33px;
+    left: 49px;
+  }
+
+  .social__link--facebook {
+    top: 27px;
+    left: 112px;
+  }
+
+  .social__link--twitter {
+    top: 33px;
+    left: 167px;
   }
 }

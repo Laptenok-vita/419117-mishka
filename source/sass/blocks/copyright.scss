@@ -1,6 +1,4 @@
 .copyright {
-  position: relative;
-
   min-height: 80px;
   padding: 0 30px;
 }
@@ -15,14 +13,37 @@
 }
 
 .copyright__link {
+  position: relative;
   font-size: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 28px;
+    height: 35px;
+    bottom: 7px;
+    left: 195px;
+
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .copyright__text {
-    padding: 36px 0 10px 38px;
-    width: 190px;
+  .copyright {
+    margin: 0;
+    padding: 0;
+    width: 185px;
+  }
 
-    text-align: left;
+  .copyright__text {
+    padding: 30px 10px 0 17px;
+  }
+
+  .copyright__link::after {
+    bottom: 7px;
+    left: 175px;
   }
 }
