@@ -5,9 +5,32 @@
 .form__title {
   margin: 0;
   padding: 0;
+  white-space: nowrap;
+  line-height: 16px;
+  width: 100%;
+}
+
+.form__title-decor {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
 
   color: $aquamarine-lighter;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    width: 208px;
+    height: 1px;
+
+    margin-left: 23px;
+
+    z-index: 1;
+
+    background-color: $aquamarine-lighter;
+  }
 }
 
 .form__group {
@@ -17,37 +40,47 @@
   border: none;
 }
 
-.form__wrapper {
+.form__item {
   width: 320px;
-  margin: 0 auto 57px;
+  margin: 0 auto;
   padding: 0 30px;
 }
 
 .form__radio-list {
-  margin: 16px 0 33px;
+  margin: 0 0 -11px;
+  padding: 25px 0 41px;
 }
 
 .form__checkbox-list {
-  margin: 5px 0 30px;
+  margin: 0 0 -22px;
+  padding: 25px 0 32px;
 }
 
-.form__tel-list {
-  margin-bottom: 37px;
+.form-checkbox-item {
+  margin: 0 0 22px;
 }
 
 .form__text-list {
-  margin: 0 0 -10px 0;
-  padding: 24px 0 20px;
+  padding: 29px 0 31px;
+  margin: 0 0 -19px;
 }
 
 .form__text-item {
-  margin: 0 0 22px 0;
+  margin: 0 0 19px;
   display: flex;
   flex-direction: column;
 }
 
+.form__tel-list {
+  padding: 7px 0 32px;
+}
+
 .form__mail-list {
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
+}
+
+.form__textarea {
+  padding: 25px 0 16px;
 }
 
 .form__signature {
@@ -57,7 +90,7 @@
 }
 
 .form__text {
-  margin: 0;
+  margin: 0 0 31px;
   padding: 0;
 
   font-weight: 400;
@@ -67,7 +100,7 @@
 }
 
 .form__submit {
-  margin-top: 31px;
+  margin: 0;
 
   font: inherit;
 }
@@ -82,7 +115,7 @@
     background-color: $grey-form;
   }
 
-  .form__wrapper {
+  .form__item {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
@@ -167,7 +200,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__wrapper {
+  .form__item {
     width: 1150px;
     margin: 0 auto;
     padding: 50px 50px;
@@ -176,8 +209,6 @@
   .form__title {
     width: 15%;
     padding: 15px 0 15px 60px;
-
-    white-space: nowrap;
   }
 
   .form__checkbox-list {

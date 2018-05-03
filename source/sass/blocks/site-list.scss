@@ -30,6 +30,17 @@
   opacity: 0.2;
 }
 
+.site-list__item--card-image {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 21px;
+  height: 18px;
+
+  opacity: 0.2;
+}
+
 .site-list__link {
   display: block;
   padding: 27px 0 27px 45px;
@@ -42,7 +53,7 @@
 
   &--logo {
     width: 260px;
-    padding: 30px 87px 16px;
+    padding: 21px 87px 16px;
   }
 
   &[href]:hover {
