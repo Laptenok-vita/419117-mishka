@@ -104,6 +104,17 @@
     margin: 0 auto;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+
+      width: 1450px;
+      height: 17px;
+      bottom: -31px;
+      left: -190px;
+
+      background-position: 0 0;
+      background-size: 1184px;
+    }
   }
 
   .page-main__text {

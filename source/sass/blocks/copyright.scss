@@ -46,6 +46,15 @@
     bottom: -10px;
     left: 157px;
   }
+
+  .copyright:hover .copyright__link {
+    cursor: pointer;
+    fill: $aquamarine-lighter;
+  }
+
+  .copyright:active .copyright__link {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

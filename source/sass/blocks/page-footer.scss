@@ -28,6 +28,15 @@
   .page-footer__logo {
     display: block;
   }
+
+  .page-footer__logo-link[href]:hover .page-footer__logo-image {
+    cursor: pointer;
+    fill: $aquamarine-lighter;
+  }
+
+  .page-footer__logo-link[href]:active .page-footer__logo-image {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

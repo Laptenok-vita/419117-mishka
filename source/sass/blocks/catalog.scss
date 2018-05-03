@@ -259,5 +259,13 @@
   .catalog__price {
     margin-top: auto;
     padding: 23px 25px;
+
+    &::before {
+      width: 256px;
+      height: 1px;
+
+      top: 0;
+      left: 30px;
+    }
   }
 }

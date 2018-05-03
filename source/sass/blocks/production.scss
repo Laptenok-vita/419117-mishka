@@ -135,6 +135,14 @@
     width: 580px;
     margin: 10px auto;
   }
+
+  .production:hover .production__wrapper {
+    box-shadow: 0 10px 25px 0 $grey-border;
+  }
+
+  .production:active .production__wrapper {
+    box-shadow: 0 5px 15px 0 $grey-border;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -142,14 +150,25 @@
     position: relative;
     flex-wrap: wrap;
     width: 1150px;
-    padding: 60px 50px;
+    padding: 0 50px;
     margin: 0 auto;
+  }
+
+  .production__wrapper {
+    width: 1050px;
+    padding: 60px 0;
   }
 
   .production__title {
     width: 33%;
-    padding: 5px 57px;
+    padding: 35px 57px 28px;
+    margin: 0;
     margin-left: auto;
+
+    &::before {
+      top: -19px;
+      left: 59px;
+    }
   }
 
   .production__description {
@@ -171,5 +190,10 @@
 
     width: 682px;
     height: 455px;
+
+    &::before {
+      top: 189px;
+      left: 293px;
+    }
   }
 }

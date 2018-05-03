@@ -96,4 +96,30 @@
     top: 3px;
     left: 150px;
   }
+
+  .social__item:hover .social__link {
+    cursor: pointer;
+    fill: $aquamarine-lighter;
+  }
+
+  .social__item:active .social__link {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__link--instagramm {
+    top: 3px;
+    left: 41px;
+  }
+
+  .social__link--facebook {
+    top: -3px;
+    left: 104px;
+  }
+
+  .social__link--twitter {
+    top: 3px;
+    left: 159px;
+  }
 }
