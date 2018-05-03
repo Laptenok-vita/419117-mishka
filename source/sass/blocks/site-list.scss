@@ -3,12 +3,13 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-
 }
 
 .site-list__item {
   position: relative;
+
   list-style: none;
+
   border-top: 1px solid $grey-border;
 
   &--card {
@@ -23,14 +24,12 @@
 }
 
 .site-list__item--search-image {
-  // content: "";
   position: absolute;
+  top: 33px;
+  left: 2px;
 
   width: 18px;
   height: 18px;
-
-  top: 33px;
-  left: 2px;
 
   opacity: 0.2;
 }
@@ -50,12 +49,11 @@
     padding: 30px 87px 16px;
   }
 
-
-  &:hover {
+  &[href]:hover {
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }
@@ -68,6 +66,7 @@
 
   .site-list__item {
     height: 89px;
+
     border: none;
 
     &--search {
@@ -76,8 +75,9 @@
       margin-left: auto;
 
       font-size: 0;
-      border-left: 1px solid $grey-border;
+
       border-right: 1px solid $grey-border;
+      border-left: 1px solid $grey-border;
     }
 
     &--card {
@@ -163,10 +163,10 @@
   }
 
   .site-list__item--logo {
-    order: 2;
-    width: 25%;
     flex-grow: 1;
+    order: 2;
     align-self: center;
+    width: 25%;
   }
 
   .site-list__item--search {
@@ -204,8 +204,8 @@
       display: flex;
       width: 149px;
       height: 72px;
-      padding: 0;
       margin: 8px 0 0 45px;
+      padding: 0;
     }
 
     &--search {

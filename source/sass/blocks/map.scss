@@ -52,8 +52,8 @@
   .map__image {
     content: "";
     position: absolute;
-    bottom: -180px;
-    left: 390px;
+    bottom: -130px;
+    left: 383px;
 
     order: 1;
     width: 525px;
@@ -62,6 +62,6 @@
 
   .map::before {
     top: -180px;
-    left: 628px;
+    left: 623px;
   }
 }

@@ -43,7 +43,6 @@
   line-height: 24px;
   font-family: "Open Sans", "Verdana", sans-serif;
   text-align: left;
-  color: #ffffff;
   color: $white;
   text-decoration: none;
 
@@ -119,7 +118,7 @@
 
   .categories__wrapper {
     width: 668px;
-    min-height: 625px;
+    min-height: 626px;
     margin: 0 auto;
   }
 
@@ -134,18 +133,18 @@
 
   .categories__list {
     position: relative;
+
     flex-direction: row;
   }
 
   .categories__list::after {
     content: "";
     position: absolute;
+    bottom: -8px;
+    left: 0;
 
     width: 768px;
     height: 23px;
-
-    bottom: -12px;
-    left: 0;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -156,7 +155,6 @@
   .categories__item {
     width: 50%;
     margin: 0;
-    padding: 30px 35px;
 
     font-size: 20px;
     line-height: 30px;
@@ -170,17 +168,33 @@
     &--darker {
       padding: 30px 45px 30px;
     }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
-  .categories__item--lighter::before{
-  top: 30px;
-  right: 30px;
+  .categories__item:hover {
+    top: -5px;
   }
 
-  .categories__item--darker::before{
+  .categories__item--lighter::before {
+    top: 30px;
+    right: 30px;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  .categories__item--darker::before {
     top: 33px;
     right: 70px;
+
+    &:hover {
+      opacity: 0.3;
     }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -213,10 +227,31 @@
   .categories__list {
     width: 1050px;
     margin: 0 auto;
+
+    &::after {
+      bottom: -1px;
+      left: -200px;
+
+      width: 1450px;
+      height: 23px;
+
+      background-position: center 0;
+      background-size: 1252px;
+    }
   }
 
   .categories__item {
     width: 50%;
-    padding: 27px 35px;
+    padding: 27px 35px 35px;
+
+    &--lighter::before {
+      top: 28px;
+      right: 37px;
+    }
+
+    &--darker::before {
+      top: 30px;
+      right: 36px;
+    }
   }
 }

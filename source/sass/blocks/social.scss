@@ -1,6 +1,6 @@
 .social {
   min-height: 80px;
-  padding: 0 30px;
+  padding: 0;
   position: relative;
 
   &::after {
@@ -8,10 +8,8 @@
     position: absolute;
     width: 260px;
     height: 1px;
-
     bottom: 0;
     left: 30px;
-
     background-color: $grey-border;
   }
 }
@@ -20,22 +18,18 @@
   display: flex;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .social__item {
   position: relative;
-
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .social__link {
   display: block;
-
   font-size: 0;
   text-decoration: none;
 
@@ -43,11 +37,9 @@
     content: "";
     position: absolute;
     top: 27px;
-    left: 58px;
-
+    left: 87px;
     width: 22px;
     height: 22px;
-
     background-image: url("../img/icon-insta.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -57,11 +49,9 @@
     content: "";
     position: absolute;
     top: 22px;
-    left: 120px;
-
+    left: 150px;
     width: 15px;
     height: 30px;
-
     background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -71,11 +61,9 @@
     content: "";
     position: absolute;
     top: 27px;
-    left: 175px;
-
+    left: 205px;
     width: 24px;
     height: 20px;
-
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -87,6 +75,7 @@
     width: 145px;
     margin: 0;
     padding: 0;
+    min-height: 20px;
 
     &::after {
       display: none;
@@ -94,17 +83,17 @@
   }
 
   .social__link--instagramm {
-    top: 33px;
-    left: 49px;
+    top: 3px;
+    left: 40px;
   }
 
   .social__link--facebook {
-    top: 27px;
-    left: 112px;
+    top: -3px;
+    left: 103px;
   }
 
   .social__link--twitter {
-    top: 33px;
-    left: 167px;
+    top: 3px;
+    left: 158px;
   }
 }

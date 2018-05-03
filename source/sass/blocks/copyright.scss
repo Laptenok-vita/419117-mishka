@@ -1,29 +1,27 @@
 .copyright {
   min-height: 80px;
-  padding: 0 30px;
-}
-
-.copyright__text {
-  margin: 0;
-  padding: 23px 0 0 40px;
-
-  font-size: 19px;
-  line-height: 24px;
-  color: $black;
 }
 
 .copyright__link {
   position: relative;
-  font-size: 0;
+  top: 22px;
+  left: 68px;
+
+  display: block;
+
+  font-size: 19px;
+  line-height: 24px;
+  color: $black;
+  text-decoration: none;
 
   &::after {
     content: "";
     position: absolute;
+    top: -2px;
+    left: 155px;
 
     width: 28px;
     height: 35px;
-    bottom: 7px;
-    left: 195px;
 
     background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
@@ -33,17 +31,30 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    width: 168px;
+    min-height: 20px;
     margin: 0;
     padding: 0;
-    width: 185px;
   }
 
-  .copyright__text {
-    padding: 30px 10px 0 17px;
+  .copyright__link {
+    top: 2px;
+    left: -15px;
   }
 
   .copyright__link::after {
-    bottom: 7px;
-    left: 175px;
+    bottom: -10px;
+    left: 157px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 185px;
+  }
+
+  .copyright__link {
+    top: 2px;
+    left: 0;
   }
 }
