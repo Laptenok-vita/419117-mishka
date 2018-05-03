@@ -1,11 +1,12 @@
 .page-main {
-  margin: 0 auto;
+  margin-bottom: 57px;
 }
 
 .page-main__wrapper {
-  width: auto;
+  width: 100%;
 
   background-color: $light-grey;
+  border-top: 1px solid $grey-border;
 }
 
 .page-main__title {
@@ -30,6 +31,10 @@
   color: #444444;
 }
 
+.page-main__form {
+  margin-bottom: 32px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     display: flex;
@@ -41,19 +46,35 @@
     z-index: -1;
 
     min-height: 225px;
-    margin: -90px 0 50px;
+    margin: -90px 0 80px;
   }
 
   .page-main__title {
+    position: relative;
     width: 668px;
     margin: 0 auto;
-    padding: 95px 20px 20px;
+    padding: 95px 15px 20px 30px;
     min-height: 225px;
 
     font-size: 43px;
     line-height: 50px;
     text-align: center;
     color: $black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 800px;
+      height: 17px;
+
+      bottom: -5px;
+      left: -60px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: center 0;
+      background-size: 780px;
+    }
   }
 
   .page-main__text {
