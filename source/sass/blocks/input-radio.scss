@@ -91,5 +91,15 @@
   .input-radio__label {
     margin: 0;
     padding: 0;
+
+    &::before {
+      top: -2px;
+      left: 17px;
+    }
+  }
+
+  .input-radio__input:checked + .input-radio__label::before {
+    top: -2px;
+    left: 17px;
   }
 }
