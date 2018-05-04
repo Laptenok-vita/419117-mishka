@@ -19,6 +19,8 @@
   background-color: transparent;
   border: 2px solid $color-text;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .input-radio__input:checked + .input-radio__label::before {

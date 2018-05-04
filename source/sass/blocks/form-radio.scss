@@ -1,7 +1,11 @@
 .form-radio {
-  display: inline-block;
-  width: 77px;
-  margin: 0 0 30px 6px;
+  width: 260px;
+  margin: 0 0 35px;
+}
+
+.form-radio__list {
+  width: 80px;
+  margin: 0;
   padding: 12px 0;
 
   text-align: center;
@@ -18,10 +22,6 @@
   }
 }
 
-.form-radio:last-child {
-  margin: 0 0 0 6px;
-}
-
 .form-radio__label {
   font-size: 17px;
   line-height: 20px;
@@ -30,4 +30,16 @@
 
 .form-radio__input {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-radio {
+    width: 350px;
+  }
+
+  .form-radio__list {
+    width: 112px;
+    margin: 0;
+    padding: 14px 0;
+  }
 }
