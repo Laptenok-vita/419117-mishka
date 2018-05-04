@@ -93,20 +93,20 @@
 
     font-size: 43px;
     line-height: 50px;
-  }
 
-  .contacts__title::after {
-    content: "";
-    position: absolute;
-    top: 42px;
-    right: 53px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      right: 53px;
 
-    width: 47px;
-    height: 81px;
+      width: 47px;
+      height: 81px;
 
-    background-image: url("../img/icon-flag.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 
   .contacts__wrapper {

@@ -13,20 +13,21 @@
   font-family: inherit;
   color: $color-text;
 
-  border: 1px solid $color-text;
+  border: 2px solid $color-text;
 }
 
 @media (min-width: $tablet-width) {
   .input-textarea {
     width: 75%;
-    margin: 4px 0 0;
+    margin: 0;
     padding: 0;
   }
 
   .input-textarea__input {
     width: 100%;
+    min-height: 145px;
     margin: 0;
-    padding: 14px 0 0 15px;
+    padding: 15px;
 
     font-size: 19px;
     line-height: 19px;

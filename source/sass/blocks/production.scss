@@ -4,7 +4,6 @@
   padding: 0 30px;
 }
 
-
 .production__wrapper {
   display: flex;
   flex-direction: column;
@@ -15,6 +14,7 @@
 
 .production__title {
   position: relative;
+
   margin: 26px 0;
   padding: 0 0 0 91px;
 
@@ -24,11 +24,11 @@
   &::before {
     content: "";
     position: absolute;
+    top: 5px;
+    left: 35px;
 
     width: 32px;
     height: 28px;
-    top: 5px;
-    left: 35px;
 
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
@@ -44,11 +44,11 @@
   &::before {
     content: "";
     position: absolute;
+    top: 35px;
+    left: 80px;
 
     width: 101px;
     height: 77px;
-    top: 35px;
-    left: 80px;
 
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
@@ -58,12 +58,14 @@
 
 .production__video:hover::before {
   transform: scale(1.2);
+
   transition: all 0.3s linear;
 }
 
 .production__video:active::before {
   transform: scale(0.8);
   opacity: 0.3;
+
   transition: all 0.2s linear;
 }
 
@@ -108,8 +110,8 @@
   }
 
   .production__title {
-    padding: 10px 20px 10px 105px;
     margin: 25px 0;
+    padding: 10px 20px 10px 105px;
 
     font-size: 20px;
     line-height: 24px;
@@ -148,10 +150,11 @@
 @media (min-width: $desktop-width) {
   .production {
     position: relative;
+
     flex-wrap: wrap;
     width: 1150px;
-    padding: 0 50px;
     margin: 0 auto;
+    padding: 0 50px;
   }
 
   .production__wrapper {
@@ -161,9 +164,9 @@
 
   .production__title {
     width: 33%;
-    padding: 35px 57px 28px;
     margin: 0;
     margin-left: auto;
+    padding: 35px 57px 28px;
 
     &::before {
       top: -19px;
@@ -173,8 +176,8 @@
 
   .production__description {
     width: 33%;
-    padding: 5px 0 0 57px;
     margin-left: auto;
+    padding: 5px 0 0 57px;
   }
 
   .production__link {

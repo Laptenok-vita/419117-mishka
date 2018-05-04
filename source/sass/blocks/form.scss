@@ -3,17 +3,17 @@
 }
 
 .form__title {
+  width: 100%;
   margin: 0;
   padding: 0;
-  white-space: nowrap;
+
   line-height: 16px;
-  width: 100%;
+  white-space: nowrap;
 }
 
 .form__title-decor {
   display: flex;
   align-items: center;
-
   margin: 0;
   padding: 0;
 
@@ -22,12 +22,11 @@
 
   &::after {
     content: "";
+    z-index: 1;
+
     width: 208px;
     height: 1px;
-
     margin-left: 23px;
-
-    z-index: 1;
 
     background-color: $aquamarine-lighter;
   }
@@ -61,32 +60,66 @@
 }
 
 .form__text-list {
-  padding: 29px 0 31px;
   margin: 0 0 -19px;
+  padding: 29px 0 31px;
 }
 
 .form__text-item {
-  margin: 0 0 19px;
   display: flex;
   flex-direction: column;
+  margin: 0 0 19px;
 }
 
 .form__tel-list {
+  position: relative;
+
   padding: 7px 0 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 8px;
+
+    width: 25px;
+    height: 24px;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.2;
+  }
 }
 
 .form__mail-list {
-  margin: 0 0 30px 0;
+  position: relative;
+
+  margin: 0 0 33px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 5px;
+
+    width: 32px;
+    height: 26px;
+
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.2;
+  }
 }
 
 .form__textarea {
-  padding: 25px 0 16px;
+  padding: 25px 0 12px;
 }
 
 .form__signature {
   width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .form__text {
@@ -129,12 +162,16 @@
     padding: 20px 0 0;
   }
 
+  .form__title-decor::after {
+    display: none;
+  }
+
   .form__radio-list {
     display: flex;
     flex-direction: column;
-    width: 50%;
     align-items: center;
-    margin: 0 0 -25px;
+    width: 50%;
+    margin: 0 0 -20px;
     padding: 0;
   }
 
@@ -153,29 +190,39 @@
   }
 
   .form__text-list {
-    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 0 -22px;
+    width: 75%;
+    margin: 0 0 -20px;
     padding: 0;
   }
 
   .form__text-item {
     flex-direction: row;
-    padding: 0;
     margin: 0 0 17px;
+    padding: 0;
   }
 
   .form__tel-list {
     width: 75%;
     margin: 0;
     padding: 0;
+
+    &::before {
+      top: 13px;
+      right: 26px;
+    }
   }
 
   .form__mail-list {
     width: 75%;
-    margin: 0 0 -6px;
+    margin: 0 0 -2px;
+
+    &::before {
+      top: 13px;
+      right: 22px;
+    }
   }
 
   .form__signature {
@@ -183,12 +230,14 @@
     justify-content: space-between;
     align-items: center;
     width: 768px;
-    margin: 0 auto;
+    margin: -4px auto 0;
     padding: 0 50px;
   }
 
   .form__text {
     order: 1;
+    margin: 0;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -235,8 +284,8 @@
   }
 
   .form__signature {
+    justify-content: space-evenly;
     width: 1150px;
     padding: 0 50px;
-    justify-content: space-evenly;
   }
 }
