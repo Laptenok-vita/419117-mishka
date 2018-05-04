@@ -1,6 +1,20 @@
 .social {
+  position: relative;
+
   min-height: 80px;
-  padding: 0 30px;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+
+    width: 260px;
+    height: 1px;
+
+    background-color: $grey-border;
+  }
 }
 
 .social__list {
@@ -30,7 +44,7 @@
     content: "";
     position: absolute;
     top: 27px;
-    left: 58px;
+    left: 87px;
 
     width: 22px;
     height: 22px;
@@ -44,7 +58,7 @@
     content: "";
     position: absolute;
     top: 22px;
-    left: 120px;
+    left: 150px;
 
     width: 15px;
     height: 30px;
@@ -58,7 +72,7 @@
     content: "";
     position: absolute;
     top: 27px;
-    left: 175px;
+    left: 205px;
 
     width: 24px;
     height: 20px;
@@ -66,5 +80,58 @@
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 145px;
+    min-height: 20px;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .social__link--instagramm {
+    top: 3px;
+    left: 32px;
+  }
+
+  .social__link--facebook {
+    top: -3px;
+    left: 95px;
+  }
+
+  .social__link--twitter {
+    top: 3px;
+    left: 150px;
+  }
+
+  .social__item:hover .social__link {
+    cursor: pointer;
+  }
+
+  .social__item:active .social__link {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__link--instagramm {
+    top: 3px;
+    left: 41px;
+  }
+
+  .social__link--facebook {
+    top: -3px;
+    left: 104px;
+  }
+
+  .social__link--twitter {
+    top: 3px;
+    left: 159px;
   }
 }

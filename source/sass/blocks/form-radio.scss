@@ -1,16 +1,25 @@
 .form-radio {
-  display: inline-block;
-  width: 77px;
-  margin: 0 0 30px 7px;
+  width: 260px;
+  margin: 0 0 35px;
+}
+
+.form-radio__list {
+  width: 80px;
+  margin: 0;
   padding: 12px 0;
 
   text-align: center;
 
-  border: 2px solid $grey-border;
-}
+  border: 2px solid rgba($color-text, 0.1);
+  cursor: pointer;
 
-.form-radio:last-child {
-  margin: 0;
+  &:hover {
+    border: 2px solid rgba($color-text, 0.3);
+  }
+
+  &:active {
+    border: 2px solid rgba($aquamarine-lighter, 1);
+  }
 }
 
 .form-radio__label {
@@ -21,4 +30,16 @@
 
 .form-radio__input {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-radio {
+    width: 350px;
+  }
+
+  .form-radio__list {
+    width: 112px;
+    margin: 0;
+    padding: 14px 0;
+  }
 }
