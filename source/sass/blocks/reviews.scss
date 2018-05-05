@@ -12,7 +12,7 @@
     bottom: -48px;
     left: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 7px;
 
     background-image: url("../img/bg-zigzag-line.svg");
@@ -143,6 +143,7 @@
       bottom: -115px;
       left: -16px;
 
+      width: 100vw;
       height: 17px;
 
       background-size: 768px 17px;
@@ -210,8 +211,8 @@
       bottom: -90px;
       left: -175px;
 
-      width: 1450px;
-      height: 23px;
+      width: 100vw;
+      height: 21px;
 
       background-position: center 0;
       background-size: 1050px;

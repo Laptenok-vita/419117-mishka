@@ -13,11 +13,11 @@
     left: 0;
 
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 7px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     background-position: 0 0;
     background-size: 320px 7px;
   }
@@ -47,17 +47,12 @@
     padding: 0 50px;
 
     &::after {
-      content: "";
-      position: absolute;
       bottom: -67px;
       left: -17px;
 
-      width: 100%;
+      width: 100vw;
       height: 17px;
 
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: repeat;
-      background-position: 0 0;
       background-size: 768px 17px;
     }
   }
@@ -87,7 +82,7 @@
       bottom: -97px;
       left: -134px;
 
-      width: 1450px;
+      width: 100vw;
       height: 21px;
 
       background-size: 1050px;
