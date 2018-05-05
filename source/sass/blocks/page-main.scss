@@ -68,7 +68,7 @@
       bottom: -5px;
       left: -60px;
 
-      width: 800px;
+      width: 110vw;
       height: 17px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
@@ -112,11 +112,13 @@
       bottom: -31px;
       left: -190px;
 
-      width: 1450px;
+      width: 110vw;
       height: 17px;
 
       background-position: 0 0;
       background-size: 1184px;
+      background-repeat: repeat-x;
+      background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
 
