@@ -1,11 +1,6 @@
 .goods-week {
   position: relative;
 
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: 38px;
-  padding: 0 30px;
-
   &::after {
     content: "";
     position: absolute;
@@ -17,10 +12,17 @@
     height: 7px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     background-position: 0 0;
     background-size: 320px 7px;
   }
+}
+
+.goods-week__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  padding: 0 30px;
 }
 
 .goods-week__titles {
@@ -41,25 +43,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods-week {
+  .goods-week::after {
+    bottom: -5px;
+    left: 0;
+
+    width: 100%;
+    height: 17px;
+
+    background-size: 768px 17px;
+  }
+
+  .goods-week__wrapper {
     width: 768px;
     margin: 0 auto 65px;
     padding: 0 50px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -67px;
-      left: -17px;
-
-      width: 100%;
-      height: 17px;
-
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: repeat;
-      background-position: 0 0;
-      background-size: 768px 17px;
-    }
   }
 
   .goods-week__titles {
@@ -78,20 +75,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .goods-week {
+  .goods-week::after {
+    bottom: 6px;
+
+    width: 100%;
+    height: 21px;
+
+    background-size: 1050px;
+  }
+
+  .goods-week__wrapper {
     width: 1150px;
     margin: 75px auto 97px;
     padding: 0 50px;
-
-    &::after {
-      bottom: -97px;
-      left: -134px;
-
-      width: 1450px;
-      height: 21px;
-
-      background-size: 1050px;
-    }
   }
 
   .goods-week__titles {
