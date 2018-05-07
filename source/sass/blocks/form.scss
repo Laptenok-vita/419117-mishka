@@ -74,42 +74,12 @@
   position: relative;
 
   padding: 7px 0 32px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 17px;
-    right: 8px;
-
-    width: 25px;
-    height: 24px;
-
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.2;
-  }
 }
 
 .form__mail-list {
   position: relative;
 
   margin: 0 0 33px 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    right: 5px;
-
-    width: 32px;
-    height: 26px;
-
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.2;
-  }
 }
 
 .form__textarea {
@@ -208,21 +178,11 @@
     width: 75%;
     margin: 0;
     padding: 0;
-
-    &::before {
-      top: 13px;
-      right: 26px;
-    }
   }
 
   .form__mail-list {
     width: 75%;
     margin: 0 0 -2px;
-
-    &::before {
-      top: 13px;
-      right: 22px;
-    }
   }
 
   .form__signature {
@@ -277,21 +237,11 @@
   .form__tel-list {
     width: 67%;
     margin: 0 15px 5px 17px;
-
-    &::before {
-      top: 8px;
-      right: 11px;
-    }
   }
 
   .form__mail-list {
     width: 67%;
     margin: 0 15px 0 17px;
-
-    &::before {
-      top: 8px;
-      right: 7px;
-    }
   }
 
   .form__signature {

@@ -14,7 +14,7 @@
   color: $black;
   text-decoration: none;
 
-  &::after {
+.copyright__link-image {
     content: "";
     position: absolute;
     top: -2px;
@@ -22,10 +22,6 @@
 
     width: 28px;
     height: 35px;
-
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
   }
 }
 
@@ -40,12 +36,12 @@
   .copyright__link {
     top: 2px;
     left: -15px;
+  }
 
-    &::after {
+  .copyright__link-image {
       bottom: -10px;
       left: 157px;
     }
-  }
 
   .copyright:hover .copyright__link {
     cursor: pointer;

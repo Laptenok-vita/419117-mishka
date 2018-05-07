@@ -20,8 +20,9 @@
 
   font: inherit;
   line-height: 24px;
+}
 
-  &::before {
+.production__title-image {
     content: "";
     position: absolute;
     top: 5px;
@@ -29,11 +30,6 @@
 
     width: 32px;
     height: 28px;
-
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
 }
 
 .production__video {
@@ -115,11 +111,11 @@
 
     font-size: 20px;
     line-height: 24px;
+  }
 
-    &::before {
+.production__title-image {
       top: 7px;
       left: 40px;
-    }
   }
 
   .production__description br {
@@ -167,11 +163,11 @@
     margin: 0;
     margin-left: auto;
     padding: 35px 57px 28px;
+  }
 
-    &::before {
+.production__title-image {
       top: -19px;
       left: 59px;
-    }
   }
 
   .production__description {
