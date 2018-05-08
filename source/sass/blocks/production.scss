@@ -20,16 +20,17 @@
 
   font: inherit;
   line-height: 24px;
+  color: $black;
 }
 
 .production__title-image {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 35px;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 35px;
 
-    width: 32px;
-    height: 28px;
+  width: 32px;
+  height: 28px;
 }
 
 .production__video {
@@ -106,16 +107,16 @@
   }
 
   .production__title {
-    margin: 25px 0;
+    margin: 29px 0 22px;
     padding: 10px 20px 10px 105px;
 
     font-size: 20px;
     line-height: 24px;
   }
 
-.production__title-image {
-      top: 7px;
-      left: 40px;
+  .production__title-image {
+    top: 5px;
+    left: 40px;
   }
 
   .production__description br {
@@ -165,9 +166,9 @@
     padding: 35px 57px 28px;
   }
 
-.production__title-image {
-      top: -19px;
-      left: 59px;
+  .production__title-image {
+    top: -19px;
+    left: 59px;
   }
 
   .production__description {

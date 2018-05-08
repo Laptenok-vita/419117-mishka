@@ -30,6 +30,7 @@
 
   font-size: 25px;
   line-height: 30px;
+  color: $black;
 }
 
 .reviews__item {
@@ -64,14 +65,17 @@
   text-decoration: none;
 }
 
-.revies__paging {
+.reviews__paging {
   position: relative;
 
   display: flex;
-  margin: 30px 0 90px;
+  margin: 30px 0 38px;
 }
 
 .reviews__button {
+  width: 130px;
+  height: 50px;
+
   font-size: 0;
 
   background-color: transparent;
@@ -90,8 +94,8 @@
 .reviews__button--prev {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 12px;
+  left: 38px;
 
   width: 50px;
   height: 26px;
@@ -100,8 +104,8 @@
 .reviews__button--next {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 12px;
+  right: 42px;
 
   width: 50px;
   height: 26px;
@@ -129,7 +133,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 768px;
-    margin: 0 auto 90px;
+    margin: 0 auto 57px;
     padding: 77px 0 15px;
 
     background-image: url("../img/review@1x.jpg");
@@ -173,7 +177,7 @@
     }
   }
 
-  .revies__paging {
+  .reviews__paging {
     order: 2;
     width: 168px;
     margin: 38px 50px;
@@ -186,8 +190,13 @@
   }
 
   .reviews__button--prev {
-    top: 0;
-    left: -5px;
+    top: 13px;
+    left: 12px;
+  }
+
+  .reviews__button--next {
+    top: 13px;
+    right: 19px;
   }
 
   .reviews__write {
@@ -197,8 +206,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    margin: 0 0 33px;
+  }
+
   .reviews::after {
-    bottom: 4px;
+    bottom: -30px;
     left: 0;
 
     height: 21px;
@@ -221,7 +234,7 @@
 
   .reviews__item {
     width: 775px;
-    padding: 45px 0 25px 3px;
+    padding: 40px 0 25px 3px;
   }
 
   .reviews__item br {
@@ -235,8 +248,8 @@
     font-size: 17px;
   }
 
-  .revies__paging {
-    margin: 16px 0 95px 0;
+  .reviews__paging {
+    margin: 17px 0 0;
   }
 
   .reviews__write {

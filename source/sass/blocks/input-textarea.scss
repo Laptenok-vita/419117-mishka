@@ -14,8 +14,12 @@
   color: $color-text;
 
   border: 2px solid $color-text;
-
   cursor: text;
+}
+
+.input-textarea__input:hover,
+.input-textarea__input:focus {
+  border: 2px solid $aquamarine-lighter;
 }
 
 @media (min-width: $tablet-width) {

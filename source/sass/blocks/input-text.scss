@@ -4,6 +4,8 @@
 
 .input-text__label {
   padding: 0 0 0 0;
+
+  color: $black;
 }
 
 .input-text__input {
@@ -32,6 +34,14 @@
   }
 }
 
+.input-text__input:hover {
+  border-bottom: 2px solid $aquamarine-lighter;
+}
+
+.input-text__input:focus {
+  border-bottom: 2px solid $aquamarine-lighter;
+}
+
 .input-text__input--tel-image {
   content: "";
   position: absolute;
@@ -42,6 +52,8 @@
   height: 24px;
 
   opacity: 0.2;
+
+  fill: $black;
 }
 
 .input-text__input--email-image {
@@ -54,6 +66,17 @@
   height: 26px;
 
   opacity: 0.2;
+
+  fill: $black;
+}
+
+.input-text__input--tel:hover + .input-text__input--tel-image,
+.input-text__input--tel:focus + .input-text__input--tel-image,
+.input-text__input--email:hover + .input-text__input--email-image,
+.input-text__input--email:focus + .input-text__input--email-image {
+  opacity: 1;
+
+  fill: $aquamarine-lighter;
 }
 
 @media (min-width: $tablet-width) {
