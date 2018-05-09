@@ -35,7 +35,6 @@
 
 .catalog__link-photo {
   display: block;
-  margin-bottom: 24px;
 
   text-decoration: none;
 }
@@ -101,26 +100,37 @@
   margin-left: auto;
 
   font-size: 0;
-  line-height: 0;
 
   background-color: transparent;
   border: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 25px;
-
-    width: 20px;
-    height: 19px;
-
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.2;
-  }
+  outline: none;
 }
+
+.catalog__button-image {
+  z-index: 1;
+
+  width: 20px;
+  height: 19px;
+  margin: 0 20px 10px 0;
+
+  cursor: pointer;
+  opacity: 0.2;
+
+  fill: $color-text;
+}
+
+.catalog__button:hover .catalog__button-image {
+  opacity: 1;
+
+  fill: $aquamarine-lighter;
+}
+
+.catalog__button:active .catalog__button-image {
+  opacity: 0.3;
+
+  fill: $aquamarine-lighter;
+}
+
 
 @media (min-width: $tablet-width) {
   .catalog {
@@ -197,11 +207,8 @@
     line-height: 24px;
   }
 
-  .catalog__button::before {
-    top: 25px;
-    right: 30px;
-
-    margin-left: auto;
+  .catalog__button-image {
+    margin: 0 28px 7px auto;
   }
 }
 
@@ -270,5 +277,9 @@
       width: 256px;
       height: 1px;
     }
+  }
+
+  .catalog__button-image {
+    margin: 0 25px 5px auto;
   }
 }

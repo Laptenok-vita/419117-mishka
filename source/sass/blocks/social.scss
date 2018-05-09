@@ -39,47 +39,61 @@
 
   font-size: 0;
   text-decoration: none;
+}
 
-  &--instagramm {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 87px;
+.social__link--instagram-image {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 87px;
 
-    width: 22px;
-    height: 22px;
+  width: 22px;
+  height: 22px;
 
-    background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  fill: $color-text;
+
+  &:hover {
+    fill: $aquamarine-lighter;
+  }
+}
+
+.social__link--facebook-image {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 150px;
+
+  width: 15px;
+  height: 30px;
+
+  fill: $color-text;
+
+  &:hover {
+    fill: $aquamarine-lighter;
   }
 
-  &--facebook {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 150px;
+  &:active {
+    opacity: 0.3;
+  }
+}
 
-    width: 15px;
-    height: 30px;
+.social__link--twitter-image {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 205px;
 
-    background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  width: 24px;
+  height: 20px;
+
+  fill: $color-text;
+
+  &:hover {
+    fill: $aquamarine-lighter;
   }
 
-  &--twitter {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 205px;
-
-    width: 24px;
-    height: 20px;
-
-    background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -95,17 +109,17 @@
     }
   }
 
-  .social__link--instagramm {
+  .social__link--instagram-image {
     top: 3px;
     left: 32px;
   }
 
-  .social__link--facebook {
+  .social__link--facebook-image {
     top: -3px;
     left: 95px;
   }
 
-  .social__link--twitter {
+  .social__link--twitter-image {
     top: 3px;
     left: 150px;
   }
@@ -120,17 +134,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .social__link--instagramm {
+  .social__link--instagram-image {
     top: 3px;
     left: 41px;
   }
 
-  .social__link--facebook {
+  .social__link--facebook-image {
     top: -3px;
     left: 104px;
   }
 
-  .social__link--twitter {
+  .social__link--twitter-image {
     top: 3px;
     left: 159px;
   }

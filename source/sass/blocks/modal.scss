@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
   top: 85px;
-  left: 0;
+  left: calc(50% - 195px);
   z-index: 10;
 
   width: 320px;
@@ -40,6 +40,26 @@
 
 .modal--open {
   display: block;
+
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .modal--closed {
@@ -63,14 +83,16 @@
   display: block;
 }
 
-.modal__overlay--closed {
+.modal__overlay--closed,
+.modal--nojs,
+.modal__overlay--nojs {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .modal {
     top: 85px;
-    left: 100px;
+    left: calc(50% - 283px);
 
     width: 566px;
     height: 336px;
@@ -100,6 +122,6 @@
 @media (min-width: $desktop-width) {
   .modal {
     top: 85px;
-    left: 390px;
+    left: calc(50% - 283px);
   }
 }

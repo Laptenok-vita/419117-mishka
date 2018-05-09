@@ -26,13 +26,22 @@
 
     background-color: transparent;
     border: 2px solid $color-text;
-
     cursor: pointer;
   }
 }
 
+.input-checkbox__label:hover::before {
+  border: 2px solid $aquamarine-lighter;
+}
+
+.input-checkbox__label:active::before {
+  border: 2px solid $grey-border;
+}
+
 .input-checkbox__input {
-  display: none;
+  margin-left: -15px;
+
+  opacity: 0;
 }
 
 .input-checkbox__input:checked + .input-checkbox__label::after {
@@ -48,6 +57,10 @@
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
+}
+
+.input-checkbox__input:focus ~ .input-checkbox__label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 @media (min-width: $tablet-width) {

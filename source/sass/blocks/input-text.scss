@@ -4,6 +4,8 @@
 
 .input-text__label {
   padding: 0 0 0 0;
+
+  color: $black;
 }
 
 .input-text__input {
@@ -21,7 +23,6 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $black;
-
   cursor: text;
 
   &--tel {
@@ -31,6 +32,51 @@
   &--email {
     padding: 23px 36px 16px 0;
   }
+}
+
+.input-text__input:hover {
+  border-bottom: 2px solid $aquamarine-lighter;
+}
+
+.input-text__input:focus {
+  border-bottom: 2px solid $aquamarine-lighter;
+}
+
+.input-text__input--tel-image {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 8px;
+
+  width: 25px;
+  height: 24px;
+
+  opacity: 0.2;
+
+  fill: $black;
+}
+
+.input-text__input--email-image {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 5px;
+
+  width: 32px;
+  height: 26px;
+
+  opacity: 0.2;
+
+  fill: $black;
+}
+
+.input-text__input--tel:hover + .input-text__input--tel-image,
+.input-text__input--tel:focus + .input-text__input--tel-image,
+.input-text__input--email:hover + .input-text__input--email-image,
+.input-text__input--email:focus + .input-text__input--email-image {
+  opacity: 1;
+
+  fill: $aquamarine-lighter;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,8 +105,18 @@
     padding: 13px 40px 13px 18px;
   }
 
+  .input-text__input--tel-image {
+    top: 13px;
+    right: 26px;
+  }
+
   .input-text__input--email {
     padding: 13px 40px 13px 18px;
+  }
+
+  .input-text__input--email-image {
+    top: 13px;
+    right: 22px;
   }
 }
 
@@ -73,8 +129,18 @@
     padding: 9px 40px 13px 20px;
   }
 
+  .input-text__input--tel-image {
+    top: 8px;
+    right: 11px;
+  }
+
   .input-text__input--email {
     padding: 7px 40px 13px 18px;
+  }
+
+  .input-text__input--email-image {
+    top: 8px;
+    right: 7px;
   }
 
   .input-text__label {

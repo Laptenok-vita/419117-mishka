@@ -8,12 +8,13 @@
 
   background-color: $white;
   border: 2px solid $color-text;
-
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: $white;
+
   background: $color-text;
 }
 
