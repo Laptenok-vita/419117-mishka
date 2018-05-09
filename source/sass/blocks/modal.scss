@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
   top: 85px;
-  left: 0;
+  left: calc(50% - 160px);
   z-index: 10;
 
   width: 320px;
@@ -92,7 +92,7 @@
 @media (min-width: $tablet-width) {
   .modal {
     top: 85px;
-    left: 130px;
+    left: calc(50% - 283px);
 
     width: 566px;
     height: 336px;
@@ -122,6 +122,6 @@
 @media (min-width: $desktop-width) {
   .modal {
     top: 85px;
-    left: 390px;
+    left: calc(50% - 283px);
   }
 }
