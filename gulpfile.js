@@ -21,7 +21,6 @@ gulp.task("build", function (done) {
   "clean",
   "copy",
   "style",
-  "js",
   "webp",
   "images",
   "sprite",
@@ -57,13 +56,6 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(server.stream())
     .pipe(gulp.dest("build/css"))
-});
-
-gulp.task("js", function() {
-  gulp.src("source/js/*.js")
-    .pipe(minify())
-    .pipe(rename("alljs.min.js"))
-    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("serve", function() {
