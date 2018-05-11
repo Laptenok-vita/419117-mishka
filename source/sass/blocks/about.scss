@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    margin: 60px auto 87px;
+    margin: 60px auto 63px;
     padding: 0 50px;
   }
 }
@@ -66,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin: 0;
     padding: 50px 0 15px;
 
     font-size: 20px;

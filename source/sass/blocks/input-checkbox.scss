@@ -47,14 +47,6 @@
   border: 2px solid $color-text;
   cursor: pointer;
 
-  &:hover {
-    border: 2px solid $aquamarine-lighter;
-  }
-
-  &:active {
-    border: 2px solid $grey-border;
-  }
-
   @media (min-width: $tablet-width) {
     top: -15px;
     left: -80px;
@@ -62,6 +54,15 @@
     width: 54px;
     height: 52px;
   }
+}
+
+
+.input-checkbox__label:hover::before {
+  border: 2px solid $aquamarine-lighter;
+}
+
+.input-checkbox__label:active::before{
+  border: 2px solid $grey-border;
 }
 
 .input-checkbox__input {
@@ -83,6 +84,8 @@
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: -3px;
