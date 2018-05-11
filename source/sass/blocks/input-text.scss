@@ -3,9 +3,21 @@
 }
 
 .input-text__label {
-  padding: 0 0 0 0;
+  padding: 0;
 
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 20px 25px 20px 0;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 25px 15px 20px;
+  }
 }
 
 .input-text__input {
@@ -25,21 +37,51 @@
   border-bottom: 2px solid $black;
   cursor: text;
 
-  &--tel {
-    padding: 16px 36px 16px 0;
+  &:hover {
+    border-bottom: 2px solid $aquamarine-lighter;
   }
 
-  &--email {
-    padding: 23px 36px 16px 0;
+  &:focus {
+    border-bottom: 2px solid $aquamarine-lighter;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 100%;
+    padding: 15px 20px;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 20px 13px 20px;
   }
 }
 
-.input-text__input:hover {
-  border-bottom: 2px solid $aquamarine-lighter;
+.input-text__input--tel {
+  padding: 16px 36px 16px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    padding: 13px 40px 13px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 40px 13px 20px;
+  }
 }
 
-.input-text__input:focus {
-  border-bottom: 2px solid $aquamarine-lighter;
+.input-text__input--email {
+  padding: 23px 36px 16px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 40px 13px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 40px 13px 18px;
+  }
 }
 
 .input-text__input--tel-image {
@@ -54,6 +96,16 @@
   opacity: 0.2;
 
   fill: $black;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    right: 11px;
+  }
 }
 
 .input-text__input--email-image {
@@ -68,6 +120,16 @@
   opacity: 0.2;
 
   fill: $black;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    right: 7px;
+  }
 }
 
 .input-text__input--tel:hover + .input-text__input--tel-image,
@@ -77,73 +139,4 @@
   opacity: 1;
 
   fill: $aquamarine-lighter;
-}
-
-@media (min-width: $tablet-width) {
-  .input-text__label {
-    margin: 0;
-    padding: 20px 25px 20px 0;
-
-    font-size: 19px;
-    line-height: 19px;
-  }
-
-  .input-text__input {
-    flex-grow: 1;
-    width: 100%;
-    padding: 15px 20px;
-
-    font-size: 19px;
-    line-height: 19px;
-
-    background-color: transparent;
-    border-bottom: 2px solid $black;
-  }
-
-  .input-text__input--tel {
-    margin-bottom: 22px;
-    padding: 13px 40px 13px 18px;
-  }
-
-  .input-text__input--tel-image {
-    top: 13px;
-    right: 26px;
-  }
-
-  .input-text__input--email {
-    padding: 13px 40px 13px 18px;
-  }
-
-  .input-text__input--email-image {
-    top: 13px;
-    right: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .input-text__input {
-    padding: 13px 20px 13px 20px;
-  }
-
-  .input-text__input--tel {
-    padding: 9px 40px 13px 20px;
-  }
-
-  .input-text__input--tel-image {
-    top: 8px;
-    right: 11px;
-  }
-
-  .input-text__input--email {
-    padding: 7px 40px 13px 18px;
-  }
-
-  .input-text__input--email-image {
-    top: 8px;
-    right: 7px;
-  }
-
-  .input-text__label {
-    padding: 15px 25px 15px 20px;
-  }
 }

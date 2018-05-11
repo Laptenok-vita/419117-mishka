@@ -1,6 +1,10 @@
 .form-radio {
   width: 260px;
   margin: 0 0 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }
 
 .form-radio__list {
@@ -20,6 +24,11 @@
   &:active {
     border: 2px solid rgba($aquamarine-lighter, 1);
   }
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    padding: 14px 0;
+  }
 }
 
 .form-radio__label {
@@ -30,16 +39,4 @@
 
 .form-radio__input {
   display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .form-radio {
-    width: 350px;
-  }
-
-  .form-radio__list {
-    width: 112px;
-    margin: 0;
-    padding: 14px 0;
-  }
 }

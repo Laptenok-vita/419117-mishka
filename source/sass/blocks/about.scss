@@ -1,95 +1,73 @@
 .about {
   width: 320px;
-  margin: 0 auto;
-  margin-bottom: 28px;
+  margin: 0 auto 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto 60px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 60px auto 63px;
+    padding: 0 50px;
+  }
 }
 
 .about__title {
   margin: 0;
-  padding: 30px 30px;
+  padding: 30px 30px 32px;
 
   font-size: 25px;
   line-height: 30px;
   color: $black;
-}
 
-.about__list {
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.about__item {
-  margin: 0;
-  padding: 57px 30px 26px;
-
-  list-style: none;
-  color: $black;
-}
-
-.about__item--eco-image {
-  position: absolute;
-  top: 2px;
-  left: 38px;
-}
-
-.about__item--style-image {
-  position: absolute;
-  top: 127px;
-  left: 29px;
-}
-
-.about__item--like-image {
-  position: absolute;
-  top: 254px;
-  left: 38px;
-}
-
-.about__item--manually-image {
-  position: absolute;
-  top: 374px;
-  left: 34px;
-}
-
-.about__item--patriotism-image {
-  position: absolute;
-  top: 498px;
-  left: 24px;
-}
-
-.about__item--gift-image {
-  position: absolute;
-  top: 620px;
-  left: 33px;
-}
-
-@media (min-width: $tablet-width) {
-  .about {
-    width: 768px;
-    margin: 0 auto 30px;
-    padding: 0 50px;
-  }
-
-  .about__title {
+  @media (min-width: $tablet-width) {
     width: 669px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 0 0;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  .about__list {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 168px;
+    padding: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .about__item {
+  @media (min-width: $desktop-width) {
+    margin: 0 175px;
+  }
+}
+
+.about__item {
+  margin: 0 0 35px 0;
+  padding: 0 30px;
+
+  list-style: none;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
     width: 50%;
-    padding: 55px 0;
+    margin: 0;
+    padding: 50px 0 15px;
 
     font-size: 20px;
     line-height: 22px;
@@ -115,105 +93,51 @@
     }
   }
 
-  .about__item--eco-image {
-    position: absolute;
-    top: 0;
-    left: 10px;
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
+    padding: 45px 0 20px;
   }
 
-  .about__item--style-image {
-    position: absolute;
-    top: 157px;
-    left: 0;
+  &--manually {
+    order: 1;
   }
 
-  .about__item--like-image {
-    position: absolute;
-    top: 317px;
-    left: 8px;
+  &--style {
+    order: 2;
   }
 
-  .about__item--manually-image {
-    position: absolute;
-    top: 3px;
-    left: 337px;
+  &--patriotism {
+    order: 3;
   }
 
-  .about__item--patriotism-image {
-    position: absolute;
-    top: 160px;
-    left: 328px;
+  &--like {
+    order: 4;
   }
 
-  .about__item--gift-image {
-    position: absolute;
-    top: 312px;
-    left: 337px;
+  &--gift {
+    order: 5;
+  }
+}
+
+.about__item-image {
+  margin: 0 0 15px 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 5px 15px;
   }
 
-  .about__item:nth-of-type(3n) {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 15px 0;
+  }
+}
+
+.about__item:nth-of-type(3n) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .about {
-    width: 1150px;
-    margin: 60px auto 87px;
-    padding: 0 50px;
-  }
-
-  .about__title {
-    margin-left: 168px;
-    padding: 0 0 51px;
-
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .about__list {
-    margin: 0 175px;
-  }
-
-  .about__item {
-    width: 50%;
-    margin: 0 0 60px;
-    padding: 50px 0 0 0;
-
-    &--eco-image {
-      position: absolute;
-      top: -5px;
-      left: 8px;
-    }
-
-    &--style-image {
-      position: absolute;
-      top: 150px;
-      left: 0;
-    }
-
-    &--like-image {
-      position: absolute;
-      top: 310px;
-      left: 8px;
-    }
-
-    &--manually-image {
-      position: absolute;
-      top: -3px;
-      left: 353px;
-    }
-
-    &--patriotism-image {
-      position: absolute;
-      top: 154px;
-      left: 344px;
-    }
-
-    &--gift-image {
-      position: absolute;
-      top: 306px;
-      left: 353px;
-    }
-  }
+.about__description {
+  margin: 0;
 }

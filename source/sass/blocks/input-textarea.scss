@@ -1,5 +1,16 @@
 .input-textarea {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 67%;
+    margin: 0 0 -5px 17px;
+  }
 }
 
 .input-textarea__input {
@@ -15,38 +26,22 @@
 
   border: 2px solid $color-text;
   cursor: text;
-}
 
-.input-textarea__input:hover,
-.input-textarea__input:focus {
-  border: 2px solid $aquamarine-lighter;
-}
-
-@media (min-width: $tablet-width) {
-  .input-textarea {
-    width: 75%;
-    margin: 0;
-    padding: 0;
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 
-  .input-textarea__input {
+  @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 145px;
     margin: 0;
-    padding: 15px;
 
     font-size: 19px;
     line-height: 19px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .input-textarea {
-    width: 67%;
-    margin: 0 0 -5px 17px;
-  }
-
-  .input-textarea__input {
-    width: 700px;
-  }
+.input-textarea__input:hover,
+.input-textarea__input:focus {
+  border: 2px solid $aquamarine-lighter;
 }

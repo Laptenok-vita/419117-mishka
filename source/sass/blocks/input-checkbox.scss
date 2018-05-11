@@ -3,6 +3,17 @@
   align-items: center;
   min-height: 39px;
   margin: 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 239px;
+    margin: 0 0 17px;
+    padding: 18px 0 21px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 23px 22px 0;
+    padding: 13px 0 20px 97px;
+  }
 }
 
 .input-checkbox__label {
@@ -15,20 +26,36 @@
   line-height: 18px;
   color: $black;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: 0;
+  @media (min-width: $tablet-width) {
+    padding: 0;
 
-    width: 40px;
-    height: 39px;
-
-    background-color: transparent;
-    border: 2px solid $color-text;
-    cursor: pointer;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
+
+.input-checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 0;
+
+  width: 40px;
+  height: 39px;
+
+  background-color: transparent;
+  border: 2px solid $color-text;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+    left: -80px;
+
+    width: 54px;
+    height: 52px;
+  }
+}
+
 
 .input-checkbox__label:hover::before {
   border: 2px solid $aquamarine-lighter;
@@ -57,35 +84,10 @@
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
-}
 
-.input-checkbox__input:focus ~ .input-checkbox__label::before {
-  outline: rgb(59, 153, 252) auto 5px;
-}
+  cursor: pointer;
 
-@media (min-width: $tablet-width) {
-  .input-checkbox {
-    width: 239px;
-    margin: 0 0 17px;
-    padding: 18px 0 21px 80px;
-  }
-
-  .input-checkbox__label {
-    padding: 0;
-
-    font-size: 19px;
-    line-height: 19px;
-  }
-
-  .input-checkbox__label::before {
-    top: -15px;
-    left: -80px;
-
-    width: 54px;
-    height: 52px;
-  }
-
-  .input-checkbox__input:checked + .input-checkbox__label::after {
+  @media (min-width: $tablet-width) {
     top: -3px;
     left: -67px;
 
@@ -94,14 +96,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .input-checkbox {
-    margin: 0 23px 22px 0;
-    padding: 13px 0 20px 97px;
-  }
-
-  .input-checkbox__label::before {
-    top: -15px;
-    left: -80px;
-  }
+.input-checkbox__input:focus ~ .input-checkbox__label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
