@@ -67,7 +67,7 @@
 }
 
 .categories__title {
-  width: 320px;
+  width: $mobile-width;
   min-height: 280px;
   margin: 0 auto;
   padding: 70px 30px 30px;
@@ -101,7 +101,7 @@
 .categories__list {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0;
 
@@ -130,9 +130,10 @@
 
 .categories__item--lighter {
   position: relative;
-  width: 320px;
+  width: $mobile-width;
   min-height: 103px;
   padding: 25px 30px 30px;
+  overflow: hidden;
 
   font-weight: 700;
   font-size: 19px;
@@ -165,9 +166,10 @@
 
 .categories__item--darker {
   position: relative;
-  width: 320px;
+  width: $mobile-width;
   min-height: 103px;
   padding: 25px 30px 30px;
+  overflow: hidden;
 
   list-style: none;
   font-weight: 700;

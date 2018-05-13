@@ -1,15 +1,13 @@
 .input-textarea {
-  margin: 0;
+  padding: 25px 0 12px;
 
   @media (min-width: $tablet-width) {
     width: 75%;
-    margin: 0;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 67%;
-    margin: 0 0 -5px 17px;
   }
 }
 

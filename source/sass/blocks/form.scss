@@ -59,19 +59,29 @@
 }
 
 .form__item {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
+    width: $tablet-width;
     padding: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
+    width: $desktop-width;
+  }
+}
+
+.form__radio-item {
+  @media (min-width: $tablet-width) {
+    margin: 3px 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px;
   }
 }
 
@@ -86,6 +96,18 @@
     width: 50%;
     margin: 0 0 -20px;
     padding: 0;
+  }
+}
+
+.form__checkbox-item {
+  margin: 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 23px 22px 0;
   }
 }
 
@@ -143,7 +165,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin: 0 0 17px;
+    margin: 0;
     padding: 0;
   }
 
@@ -186,24 +208,28 @@
 }
 
 .form__textarea {
-  padding: 25px 0 12px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 -5px 17px;
+  }
 }
 
 .form__signature {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    width: 768px;
+    width: $tablet-width;
     margin: -4px auto 0;
     padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
+    width: $desktop-width;
     padding: 0 50px;
   }
 }
@@ -242,7 +268,7 @@
   }
 }
 
-.form__group:nth-of-type(even) {
+.form__group:nth-of-type(2n) {
   @media (min-width: $tablet-width) {
     background-color: $grey-form;
   }

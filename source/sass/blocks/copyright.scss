@@ -1,5 +1,5 @@
 .copyright {
-  width: 320px;
+  width: $mobile-width;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +39,7 @@
 
 .copyright__text {
   width: 125px;
-  margin: 23px 31px 33px 38px;
+  margin: 25px 31px 25px 38px;
 
   font-size: 19px;
   line-height: 24px;

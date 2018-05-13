@@ -7,13 +7,12 @@
     bottom: -42px;
     left: 0;
 
-    display: block;
     width: 100%;
     height: 7px;
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: 0 0;
+    background-position-x: 50%;
     background-size: 320px 7px;
 
     @media (min-width: $tablet-width) {
@@ -35,19 +34,19 @@
 }
 
 .goods-week__wrapper {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   margin-bottom: 38px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     margin: 0 auto 65px;
     padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
+    width: $desktop-width;
     margin: 75px auto 97px;
     padding: 0 50px;
   }
@@ -81,14 +80,13 @@
     width: 125px;
     min-height: 55px;
     margin: 38px 0;
-    padding: 11px 0;
+    padding: 16px 0;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 40px;
-    margin: 8px 0 8px 30px;
-    padding: 5px 20px 0 0;
+    margin: 13px 0 38px 30px;
+    padding: 0 20px 0 0;
   }
 }

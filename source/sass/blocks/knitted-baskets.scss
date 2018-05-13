@@ -2,13 +2,22 @@
   position: relative;
 
   display: flex;
-  flex-basis: 320px;
+  flex-basis: $mobile-width;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    min-height: 404px;
+    margin: 0;
+    padding-right: 53px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: -115px;
+    width: 50%;
+    padding: 0 55px 0 174px;
+    margin-right: auto;
   }
 }
 
@@ -30,7 +39,7 @@
   @media (min-width: $desktop-width) {
     order: 1;
     min-height: 40px;
-    margin: 0 auto 0 0;
+    margin: 0 auto 38px 0;
     padding-left: 15px;
 
     font-size: 53px;
@@ -47,17 +56,17 @@
   color: $color-text;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 100%;
     margin: 0;
-    padding: 0 35px 0 0;
+    padding: 5px 0;
 
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
-    margin: 160px 56px 48px 172px;
+    width: 100%;
+    margin: 0 0 40px 0;
     padding: 0 15px 0 0;
   }
 }
@@ -73,12 +82,12 @@
 
   @media (min-width: $tablet-width) {
     width: 290px;
-    margin: 40px 43px 47px 0;
+    margin: 30px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
-    margin: 0 58px 97px 160px;
+    width: 100%;
+    margin: 8px 0 100px 0;
   }
 }
 
@@ -87,7 +96,7 @@
 }
 
 .knitted-baskets__field {
-  padding: 9px 0 10px;
+  padding: 9px 0;
 
   @media (min-width: $tablet-width) {
     padding: 7px 0 12px;
@@ -115,9 +124,10 @@
   height: 315px;
 
   @media (min-width: $tablet-width) {
+    content: "";
     position: absolute;
     top: 10px;
-    right: 0;
+    left: 100%;
 
     order: 1;
     width: 333px;
@@ -125,7 +135,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
+    top: -160px;
+    left: 100%;
     z-index: -1;
 
     width: 525px;
@@ -144,24 +155,22 @@
   color: $color-text;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    margin: 0 0 25px;
-    padding: 7px 55px 7px 10px;
+    width: 100%;
+    margin: 0 auto 27px;
 
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
-    margin: 0 0 26px 162px;
-    padding: 7px 7px;
+    width: 100%;
+    margin: 8px 0 20px;
   }
 }
 
 .knitted-baskets__order {
   display: block;
-  width: 260px;
+  width: 100%;
 
   text-decoration: none;
 
@@ -171,7 +180,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 28%;
-    margin: 0 0 0 174px;
+    width: 100%;
+    margin: 0 0 0 0;
   }
 }

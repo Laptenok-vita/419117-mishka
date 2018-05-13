@@ -1,19 +1,22 @@
 .page-main {
-  margin-bottom: 57px;
+  margin: 0 auto 57px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 55px;
     display: flex;
     flex-direction: column;
-    margin: 0 0 55px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
     margin-bottom: 47px;
   }
 }
 
 .page-main__wrapper {
   position: relative;
+  margin-bottom: 30px;
 
   background-color: $light-grey;
   border-top: 1px solid $grey-border;
@@ -56,7 +59,7 @@
 }
 
 .page-main__title {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 70px 30px 73px;
 
@@ -88,8 +91,8 @@
 }
 
 .page-main__text {
-  width: 320px;
-  margin: 25px auto 23px;
+  width: $mobile-width;
+  margin: 0 auto 23px;
   padding: 0 30px;
 
   font-weight: 400;
@@ -98,7 +101,7 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     margin: -7px auto 5px;
     padding: 0 50px;
 
@@ -109,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 53%;
+    width: 62%;
     margin: 0 auto 0;
     padding: 9px;
   }
