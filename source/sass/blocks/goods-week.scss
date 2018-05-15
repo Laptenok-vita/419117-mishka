@@ -29,6 +29,7 @@
       height: 21px;
 
       background-size: 1050px;
+      background-position: 25px;
     }
   }
 }
@@ -41,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    margin: 0 auto 65px;
+    margin: 0 auto 68px;
     padding: 0 50px;
   }
 
@@ -62,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 43px;
+    padding-top: 45px;
   }
 }
 
@@ -79,14 +80,40 @@
   @media (min-width: $tablet-width) {
     width: 125px;
     min-height: 55px;
-    margin: 38px 0;
+    margin: 35px 0;
     padding: 16px 0;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 13px 0 38px 30px;
+    margin: 15px 0 38px 30px;
     padding: 0 20px 0 0;
+  }
+}
+
+.goods-week__subtitle {
+  padding: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    min-height: 40px;
+    margin: 0 auto 38px 0;
+    padding-left: 15px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

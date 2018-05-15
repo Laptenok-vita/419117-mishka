@@ -1,8 +1,8 @@
 .page-main {
-  margin: 0 auto 57px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 55px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
@@ -10,13 +10,12 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     margin: 0 auto;
-    margin-bottom: 47px;
   }
 }
 
 .page-main__wrapper {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   background-color: $light-grey;
   border-top: 1px solid $grey-border;
@@ -36,24 +35,24 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-position: center 0;
+      background-position: 15px 0;
       background-size: 780px;
     }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 257px;
-    margin: -90px 0 110px;
+    margin: -90px 0 115px;
 
     &::after {
-      bottom: 0;
+      bottom: -1px;
       left: 0;
 
       width: 100%;
-      height: 17px;
+      height: 21px;
 
       background-position: 0 0;
-      background-size: 1130px;
+      background-size: 1150px;
     }
   }
 }
@@ -61,7 +60,7 @@
 .page-main__title {
   width: $mobile-width;
   margin: 0 auto;
-  padding: 70px 30px 73px;
+  padding: 70px 30px 75px;
 
   font-size: 27px;
   line-height: 30px;

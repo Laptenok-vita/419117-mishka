@@ -1,15 +1,15 @@
 .contacts {
   position: relative;
 
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin: 30px auto 0;
+    margin: 28px auto 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    margin: 66px auto 50px;
+    margin: 66px auto 100px;
     padding: 0 50px;
   }
 }
@@ -48,7 +48,7 @@
     content: "";
     position: absolute;
     top: 43px;
-    left: 673px;
+    left: 669px;
 
     display: block;
     width: 47px;
@@ -56,7 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 70px;
+    top: 67px;
     left: 113px;
   }
 }

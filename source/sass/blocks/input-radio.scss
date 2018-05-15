@@ -38,7 +38,7 @@
 .input-radio__label::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 0;
 
   width: 39px;
@@ -78,7 +78,7 @@
 .input-radio__input:checked + .input-radio__label::after {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 16px;
   left: 12px;
 
   width: 15px;

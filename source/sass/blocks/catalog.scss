@@ -1,6 +1,6 @@
 .catalog {
   width: $mobile-width;
-  margin: 0 auto 30px;
+  margin: 7px auto 30px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    margin: 0 auto 60px;
+    margin: 12px auto 60px;
     padding: 0 50px;
   }
 }
@@ -37,7 +37,7 @@
 }
 
 .catalog__item {
-  margin: 0 0 32px;
+  margin: 0 0 29px;
 
   list-style: none;
 
@@ -72,12 +72,16 @@
   @media (min-width: $desktop-width) {
     width: 315px;
     height: 464px;
-    margin: 0;
+    margin: 0 0 20px;
   }
 }
 
 .catalog__photo {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -97,7 +101,6 @@
     min-height: 165px;
     margin: 0;
     padding: 0;
-    padding-top: 11px;
   }
 }
 
@@ -107,13 +110,13 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    margin: 20px 0 0;
+    margin: 19px 0 0 3px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-bottom: 5px;
+    padding: 0;
   }
 }
 
@@ -160,13 +163,13 @@
     width: 100%;
     margin: 0;
     margin-bottom: auto;
-    padding: 10px 25px;
+    padding: 0 25px 10px 28px;
 
     font-size: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 25px;
+    padding: 4px 25px;
   }
 }
 
@@ -207,7 +210,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-top: auto;
-    padding: 25px 0 27px 30px;
+    padding: 25px 0 27px 33px;
 
     font-size: 17px;
     line-height: 24px;
@@ -244,11 +247,11 @@
   fill: $color-text;
 
   @media (min-width: $tablet-width) {
-    margin: 0 28px 7px auto;
+    margin: 0 25px 7px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 25px 5px auto;
+    margin: 0 25px 10px auto;
   }
 }
 
