@@ -16,10 +16,11 @@
     background-size: 320px 7px;
 
     @media (min-width: $tablet-width) {
-      bottom: -5px;
+      bottom: 0;
 
       height: 17px;
 
+      background-position: 20px;
       background-size: 768px 17px;
     }
 
@@ -81,7 +82,7 @@
     width: 125px;
     min-height: 55px;
     margin: 35px 0;
-    padding: 16px 0;
+    padding: 17px 0 15px;
 
     text-align: center;
   }

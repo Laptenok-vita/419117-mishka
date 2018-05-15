@@ -1,9 +1,10 @@
 .input-text {
   position: relative;
+  // margin-top: 22px;
 }
 
 .input-text__label {
-  padding: 0;
+  padding: 28px 0 0;
 
   color: $black;
 
@@ -22,12 +23,12 @@
 .input-text__input {
   display: block;
   width: 260px;
-  padding: 16px 16px 16px 0;
+  padding: 14px 16px 13px 0;
 
   font: inherit;
   font-weight: 400;
   font-size: inherit;
-  line-height: 18px;
+  line-height: 20px;
   font-family: inherit;
   color: $color-text;
 
@@ -47,22 +48,22 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     width: 100%;
-    padding: 15px 20px;
+    padding: 14px 20px;
 
     font-size: 19px;
     line-height: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 14px 20px;
+    padding: 11px 20px 14px;
   }
 }
 
 .input-text__icon {
   content: "";
   position: absolute;
-  top: 17px;
-  right: 8px;
+  top: 10px;
+  right: 6px;
 
   opacity: 0.2;
 
@@ -70,12 +71,12 @@
 
   @media (min-width: $tablet-width) {
     top: 13px;
-    right: 26px;
+    right: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 8px;
-    right: 11px;
+    top: 11px;
+    right: 9px;
   }
 }
 

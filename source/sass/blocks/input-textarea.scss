@@ -14,7 +14,7 @@
 .input-textarea__input {
   width: 260px;
   min-height: 140px;
-  padding: 15px;
+  padding: 12px 15px;
 
   font-weight: 400;
   font-size: inherit;
@@ -22,12 +22,10 @@
   font-family: inherit;
   color: $color-text;
 
+  resize: none;
+
   border: 2px solid $color-text;
   cursor: text;
-
-  @media (min-width: $desktop-width) {
-    width: 700px;
-  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -36,6 +34,11 @@
 
     font-size: 19px;
     line-height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    min-height: 140px;
   }
 }
 

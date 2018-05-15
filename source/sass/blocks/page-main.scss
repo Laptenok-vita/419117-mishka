@@ -35,8 +35,8 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-position: 15px 0;
-      background-size: 780px;
+      background-position: 0 0;
+      background-size: 768px;
     }
   }
 
@@ -113,10 +113,18 @@
   @media (min-width: $desktop-width) {
     width: 62%;
     margin: 0 auto 0;
-    padding: 9px;
+    padding: 5px;
   }
 }
 
 .page-main__form {
-  margin-bottom: 32px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }

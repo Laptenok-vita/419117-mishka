@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <script src="js/picturefill.min.js"></script>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -201,12 +203,12 @@
         </cite>
         <div class="reviews__paging">
           <button class="reviews__button" type="button">Предыдущий отзыв
-            <svg class="reviews__button--prev" width="50" height="26">
+            <svg class="reviews__icon reviews__icon--prev" width="50" height="26">
               <use xlink:href="#icon-left-arrow"></use>
             </svg>
           </button>
           <button class="reviews__button" type="button">Следующий отзыв
-            <svg class="reviews__button--next" width="50" height="26">
+            <svg class="reviews__icon reviews__icon--next" width="50" height="26">
               <use xlink:href="#icon-right-arrow"></use>
             </svg>
           </button>

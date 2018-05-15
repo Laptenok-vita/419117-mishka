@@ -1,5 +1,10 @@
 .categories {
   position: relative;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
   &::after {
     @media (min-width: $tablet-width) {
@@ -13,8 +18,8 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-position: 0 0;
-      background-size: 800px 23px;
+      background-position: 38px 0;
+      background-size: 768px 23px;
     }
 
     @media (min-width: $desktop-width) {
@@ -45,7 +50,7 @@
     margin-top: -90px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 48% 0;
+    background-position: 50% 0;
     background-size: 1150px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
