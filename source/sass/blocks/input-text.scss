@@ -1,11 +1,11 @@
 .input-text {
   position: relative;
-  // margin-top: 22px;
 }
 
 .input-text__label {
   padding: 28px 0 0;
 
+  line-height: 18px;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -23,12 +23,12 @@
 .input-text__input {
   display: block;
   width: 260px;
-  padding: 14px 16px 13px 0;
+  padding: 14px 16px 17px 0;
 
   font: inherit;
   font-weight: 400;
   font-size: inherit;
-  line-height: 20px;
+  line-height: 18px;
   font-family: inherit;
   color: $color-text;
 
@@ -48,7 +48,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     width: 100%;
-    padding: 14px 20px;
+    padding: 12px 20px 14px;
 
     font-size: 19px;
     line-height: 19px;

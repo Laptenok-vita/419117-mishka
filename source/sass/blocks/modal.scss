@@ -2,7 +2,7 @@
   position: fixed;
   top: 85px;
   left: calc(50% - 160px);
-  z-index: 10;
+  z-index: 100;
 
   width: $mobile-width;
   margin: 0 auto;
@@ -18,10 +18,6 @@
     width: 566px;
     height: 336px;
     padding: 47px 105px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: calc(50% - 283px);
   }
 }
 
@@ -51,8 +47,6 @@
   display: block;
   width: 260px;
 
-  font-size: 17px;
-  line-height: 20px;
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
@@ -97,7 +91,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 50;
 
   width: 100%;
   height: 100%;
